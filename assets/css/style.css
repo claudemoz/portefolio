@@ -512,6 +512,33 @@ section .container {
   background-color: #18d26e;
 }
 
+/*  */
+.skills ul {
+  list-style: none;
+  padding: 0;
+}
+
+.skills ul li {
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+}
+
+.skills ul strong {
+  margin-right: 10px;
+}
+
+.skills  ul i {
+  font-size: 16px;
+  margin-right: 5px;
+  color: #18d26e;
+  line-height: 0;
+}
+
+.skills p:last-child {
+  margin-bottom: 0;
+}
+
 /*--------------------------------------------------------------
 # Interests
 --------------------------------------------------------------*/
