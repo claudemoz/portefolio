@@ -98,9 +98,100 @@ h6 {
   padding-bottom: 6px;
 }
 
+#header .header-contact {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin: 24px 0 0;
+  padding: 0;
+  justify-content: flex-start;
+}
+
+#header .header-contact-chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 16px;
+  border-radius: 999px;
+  border: 1px solid rgba(24, 210, 110, 0.35);
+  background: rgba(255, 255, 255, 0.05);
+  color: rgba(255, 255, 255, 0.95);
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.35;
+  text-decoration: none;
+  backdrop-filter: blur(12px);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+  transition: border-color 0.3s ease, background 0.3s ease, transform 0.25s ease, box-shadow 0.25s ease, color 0.3s ease;
+}
+
+#header .header-contact-chip:hover {
+  color: #fff;
+  border-color: #18d26e;
+  background: rgba(24, 210, 110, 0.12);
+  transform: translateY(-2px);
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.3);
+}
+
+#header .header-contact-chip--cv {
+  border-color: rgba(24, 210, 110, 0.55);
+  background: rgba(24, 210, 110, 0.18);
+  font-weight: 600;
+}
+
+#header .header-contact-chip--cv .header-contact-chip__ico {
+  background: rgba(0, 0, 0, 0.2);
+  color: #bfffe0;
+}
+
+#header .header-contact-chip--cv:hover {
+  background: rgba(24, 210, 110, 0.32);
+}
+
+#header .header-contact-chip:focus-visible {
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(24, 210, 110, 0.45);
+}
+
+#header .header-contact-chip__ico {
+  display: grid;
+  place-items: center;
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  flex-shrink: 0;
+  background: rgba(24, 210, 110, 0.22);
+  color: #48f0a0;
+  font-size: 15px;
+}
+
+#header .header-contact-chip__txt {
+  max-width: 220px;
+  word-break: break-word;
+}
+
+@media (min-width: 576px) {
+  #header .header-contact-chip__txt {
+    max-width: none;
+    word-break: normal;
+  }
+}
+
 #header img {
   padding: 0;
   margin: 0;
+}
+
+#header .header-photo {
+  display: block;
+  width: min(200px, 46vw);
+  max-width: 200px;
+  aspect-ratio: 1;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 4px solid rgba(24, 210, 110, 0.55);
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.35);
+  margin: 0 0 28px;
 }
 
 #header .social-links {
@@ -145,6 +236,10 @@ h6 {
     flex-direction: column;
     align-items: center;
   }
+
+  #header .header-contact {
+    justify-content: center;
+  }
 }
 
 /* Header Top */
@@ -159,6 +254,14 @@ h6 {
 
 #header.header-top .social-links,
 #header.header-top h2 {
+  display: none;
+}
+
+#header.header-top .header-contact {
+  display: none;
+}
+
+#header.header-top .header-photo {
   display: none;
 }
 
@@ -513,6 +616,20 @@ section .container {
 }
 
 /*  */
+.skills .skills-category-title {
+  font-size: 20px;
+  font-weight: 700;
+  font-family: "Poppins", sans-serif;
+  margin: 0 0 18px;
+  padding-bottom: 8px;
+  color: #18d26e;
+  border-bottom: 2px solid rgba(24, 210, 110, 0.35);
+}
+
+.skills .row.row-cols-lg-5 > .col {
+  min-width: 0;
+}
+
 .skills ul {
   list-style: none;
   padding: 0;
@@ -653,6 +770,81 @@ section .container {
 /*--------------------------------------------------------------
 # Resume
 --------------------------------------------------------------*/
+.resume-cv-banner {
+  margin: -8px auto 36px;
+  max-width: 540px;
+}
+
+.resume-cv-download {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  padding: 16px 22px;
+  border-radius: 16px;
+  border: 1px solid rgba(24, 210, 110, 0.4);
+  background: rgba(24, 210, 110, 0.09);
+  color: inherit;
+  text-decoration: none;
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease, background 0.3s ease;
+}
+
+.resume-cv-download:hover {
+  transform: translateY(-4px);
+  border-color: #18d26e;
+  background: rgba(24, 210, 110, 0.14);
+  box-shadow: 0 18px 44px rgba(0, 0, 0, 0.28);
+}
+
+.resume-cv-download:focus-visible {
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(24, 210, 110, 0.5);
+}
+
+.resume-cv-download__icon {
+  flex-shrink: 0;
+  display: grid;
+  place-items: center;
+  width: 52px;
+  height: 52px;
+  border-radius: 12px;
+  background: rgba(0, 0, 0, 0.25);
+  color: #ffb4b4;
+  font-size: 28px;
+}
+
+.resume-cv-download__text {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  min-width: 0;
+}
+
+.resume-cv-download__text strong {
+  font-size: 16px;
+  font-weight: 700;
+  color: #fff;
+  font-family: "Poppins", sans-serif;
+}
+
+.resume-cv-download__text span {
+  font-size: 13px;
+  color: rgba(255, 255, 255, 0.52);
+}
+
+.resume-cv-download__cta {
+  margin-left: auto;
+  flex-shrink: 0;
+  font-size: 22px;
+  color: rgba(255, 255, 255, 0.5);
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.resume-cv-download:hover .resume-cv-download__cta {
+  color: #18d26e;
+  transform: translateY(4px);
+}
+
 .resume .resume-title {
   font-size: 26px;
   font-weight: 700;
@@ -672,7 +864,7 @@ section .container {
   line-height: 18px;
   font-size: 18px;
   font-weight: 600;
-  text-transform: uppercase;
+  /* text-transform: uppercase; */
   font-family: "Poppins", sans-serif;
   color: #18d26e;
   margin-bottom: 10px;
@@ -687,8 +879,25 @@ section .container {
   margin-bottom: 10px;
 }
 
+.resume .resume-where {
+  margin: -4px 0 14px;
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.resume .resume-where em {
+  font-style: normal;
+  color: rgba(255, 255, 255, 0.75);
+}
+
+.resume .resume-meta strong {
+  color: #fff;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+}
+
 .resume .resume-item ul {
   padding-left: 20px;
+  margin-bottom: 0;
 }
 
 .resume .resume-item ul li {
@@ -1053,6 +1262,107 @@ section .container {
   line-height: 24px;
   font-size: 14px;
   margin: 0 0 0 68px;
+}
+
+  text-align: center;
+  max-width: 520px;
+  margin: 0 auto 28px;
+  color: rgba(255, 255, 255, 0.75);
+  font-size: 15px;
+  line-height: 1.6;
+}
+
+.contact-direct-row {
+  margin-top: 8px;
+}
+
+.contact-pill-card {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  width: 100%;
+  padding: 22px 24px;
+  position: relative;
+  border-radius: 16px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  background: rgba(255, 255, 255, 0.05);
+  text-decoration: none;
+  overflow: hidden;
+  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.2);
+  transition: transform 0.35s ease, border-color 0.35s ease, box-shadow 0.35s ease, background 0.35s ease;
+}
+
+.contact-pill-card:hover {
+  transform: translateY(-5px);
+  border-color: rgba(24, 210, 110, 0.45);
+  background: rgba(255, 255, 255, 0.08);
+  box-shadow: 0 22px 50px rgba(0, 0, 0, 0.32);
+}
+
+.contact-pill-card:focus-visible {
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(24, 210, 110, 0.5);
+}
+
+.contact-pill-card__accent {
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 4px;
+  background: linear-gradient(180deg, #18d26e 0%, rgba(24, 210, 110, 0.25) 100%);
+}
+
+.contact-pill-card__icon {
+  flex-shrink: 0;
+  width: 56px;
+  height: 56px;
+  border-radius: 14px;
+  display: grid;
+  place-items: center;
+  background: rgba(24, 210, 110, 0.14);
+  color: #3be090;
+  font-size: 24px;
+  border: 1px solid rgba(24, 210, 110, 0.25);
+}
+
+.contact-pill-card__body {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  min-width: 0;
+  text-align: left;
+}
+
+.contact-pill-card__label {
+  font-family: "Poppins", sans-serif;
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.42);
+}
+
+.contact-pill-card__value {
+  font-size: 16px;
+  font-weight: 600;
+  color: #fff;
+  line-height: 1.4;
+  word-break: break-word;
+}
+
+.contact-pill-card__arrow {
+  margin-left: auto;
+  align-self: center;
+  flex-shrink: 0;
+  color: rgba(255, 255, 255, 0.26);
+  font-size: 18px;
+  transition: transform 0.35s ease, color 0.35s ease;
+}
+
+.contact-pill-card:hover .contact-pill-card__arrow {
+  color: #18d26e;
+  transform: translate(4px, -4px);
 }
 
 .contact .info-box .social-links {
