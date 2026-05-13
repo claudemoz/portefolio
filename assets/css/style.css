@@ -1136,6 +1136,17 @@ section .container {
   color: #63eda3;
 }
 
+.portfolio .portfolio-link-placeholder {
+  display: inline-block;
+  opacity: 0.45;
+  cursor: not-allowed;
+  vertical-align: middle;
+}
+
+.portfolio .portfolio-wrap:hover .portfolio-link-placeholder {
+  color: rgba(255, 255, 255, 0.45);
+}
+
 .portfolio .portfolio-wrap:hover::before {
   top: 0;
   left: 0;
