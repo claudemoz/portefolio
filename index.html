@@ -121,8 +121,7 @@
         <div class="col">
           <h3 class="skills-category-title">Frontend</h3>
           <ul>
-            <li><i class="bi bi-chevron-right"></i> <strong>Html / Css</strong></li>
-            <li><i class="bi bi-chevron-right"></i> <strong>Tailwind CSS</strong></li>
+            <li><i class="bi bi-chevron-right"></i> <strong>Html / Css / Tailwind</strong></li>
             <li><i class="bi bi-chevron-right"></i> <strong>Shadcn / Primevue</strong></li>
             <li><i class="bi bi-chevron-right"></i> <strong>JavaScript / TypeScript</strong></li>
             <li><i class="bi bi-chevron-right"></i> <strong>Vue js / Nuxt js</strong></li>
@@ -135,7 +134,6 @@
             <li><i class="bi bi-chevron-right"></i> <strong>React Native</strong></li>
             <li><i class="bi bi-chevron-right"></i> <strong>Expo</strong></li>
             <li><i class="bi bi-chevron-right"></i> <strong>CI/CD</strong></li>
-            <li><i class="bi bi-chevron-right"></i> <strong>OTA</strong></li>
             <!-- <li><i class="bi bi-chevron-right"></i> <strong>Firebase</strong></li> -->
           </ul>
         </div>
@@ -162,13 +160,12 @@
         <div class="col">
           <h3 class="skills-category-title">Infrastructure</h3>
           <ul>
-            <li><i class="bi bi-chevron-right"></i> <strong>Git / GitHub / GitLab</strong></li>
-            <li><i class="bi bi-chevron-right"></i> <strong>CI/CD / LLM</strong></li>
+            <li><i class="bi bi-chevron-right"></i> <strong>Git / GitHub</strong></li>
+            <li><i class="bi bi-chevron-right"></i> <strong>GitLab CI/CD / LLM</strong></li>
             <li><i class="bi bi-chevron-right"></i> <strong>Docker / Nginx</strong></li>
-            <li><i class="bi bi-chevron-right"></i> <strong>Kubernetes / Helm</strong></li>
-            <li><i class="bi bi-chevron-right"></i> <strong>Ansible / Terraform</strong></li>
+            <li><i class="bi bi-chevron-right"></i> <strong>Kubernetes / Helm / ArgoCD</strong></li>
+            <li><i class="bi bi-chevron-right"></i> <strong>Terraform</strong></li>
             <li><i class="bi bi-chevron-right"></i> <strong>Grafana / Prometheus</strong></li>
-            <li><i class="bi bi-chevron-right"></i> <strong>ELK / APM</strong></li>
             <li><i class="bi bi-chevron-right"></i> <strong>AWS / Azure</strong></li>
           </ul>
         </div>
@@ -422,6 +419,30 @@
             </div>
           </div>
         </div>
+        <div class="col-lg-4 col-md-6 portfolio-item">
+          <div class="portfolio-wrap">
+            <img src="assets/img/certificats/k8s.png" class="img-fluid" alt="Certification Kubernetes">
+            <div class="portfolio-info">
+              <h4>Kubernetes</h4>
+              <div class="portfolio-links">
+                <a href="assets/img/certificats/k8s.png" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Certification Kubernetes"><i class="bx bx-plus"></i></a>
+                <a href="https://dyma.fr/certification/6299c13dc1feb6a539a0084a/645e595690ccf96f7c67665c" target="_blank" rel="noopener noreferrer" title="Ouvrir la certification dans un nouvel onglet"><i class="bx bx-link"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 portfolio-item">
+          <div class="portfolio-wrap">
+            <img src="assets/img/certificats/springboot.png" class="img-fluid" alt="Certification Java / Spring Boot">
+            <div class="portfolio-info">
+              <h4>Java / Spring Boot </h4>
+              <div class="portfolio-links">
+                <a href="assets/img/certificats/springboot.png" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Certification Java / Spring Boot"><i class="bx bx-plus"></i></a>
+                <a href="https://dyma.fr/certification/6299c13dc1feb6a539a0084a/64799f7159ebb4f1e99bfb8b" target="_blank" rel="noopener noreferrer" title="Ouvrir la certification dans un nouvel onglet"><i class="bx bx-link"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </section><!-- End Certificats Section -->
@@ -447,225 +468,504 @@
 
       <div class="row portfolio-container">
         <div class="col-lg-4 col-md-6 portfolio-item filter-web">
-          <div class="portfolio-wrap">
-            <img src="assets/img/projects/gestache.png" class="img-fluid" alt="">
-            <div class="portfolio-info">
-              <h4>Application de gestion de tâches</h4>
-              <div class="portfolio-links">
-                <a href="assets/img/projects/gestache.png" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Application de gestion de tâches"><i class="bx bx-plus"></i></a>
-                <a href="https://gestache-tsiang.netlify.app/" target="_blank" rel="noopener noreferrer" title="Ouvrir le projet dans un nouvel onglet"><i class="bx bx-link"></i></a>
+          <div class="portfolio-card">
+            <div class="portfolio-wrap">
+              <img src="assets/img/projects/gestache.png" class="img-fluid" alt="Application de gestion de tâches Gestache">
+              <div class="portfolio-info">
+                <div class="portfolio-links">
+                  <a href="assets/img/projects/gestache.png" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Aperçu — Gestache"><i class="bx bx-search-alt"></i></a>
+                  <a href="https://gestache-tsiang.netlify.app/" target="_blank" rel="noopener noreferrer" title="Ouvrir le projet"><i class="bx bx-link-external"></i></a>
+                </div>
               </div>
+            </div>
+            <div class="portfolio-content">
+              <h4>Gestache</h4>
+              <p class="portfolio-desc">Application web de gestion de tâches avec système de minuteur par tâche.</p>
+              <ul class="portfolio-stack">
+                <li>Vue.js</li>
+                <li>Vuetify</li>
+                <li>Vercel</li>
+                <li>Firebase</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        
+        <!-- <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+          <div class="portfolio-card">
+            <div class="portfolio-wrap">
+              <img src="assets/img/projects/pedaalma.png" class="img-fluid" alt="Interface pédagogique Almamater">
+              <div class="portfolio-info">
+                <div class="portfolio-links">
+                  <a href="assets/img/projects/pedaalma.png" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Aperçu — Interface pédagogique"><i class="bx bx-search-alt"></i></a>
+                  <span class="portfolio-link-placeholder" title="Pas de démo en ligne"><i class="bx bx-link-external"></i></span>
+                </div>
+              </div>
+            </div>
+            <div class="portfolio-content">
+              <h4>Interface pédagogique Almamater</h4>
+              <p class="portfolio-desc">Module de gestion scolaire pour le suivi des cours, évaluations et parcours élèves.</p>
+              <ul class="portfolio-stack">
+                <li>Vue.js</li>
+                <li>Node.js</li>
+                <li>Sequelize</li>
+                <li>MySQL</li>
+                <li>Docker</li>
+                <li>Gitlab CI/CD</li>
+                <li>Azure</li>
+              </ul>
+            </div>
+          </div>
+        </div> -->
+        <!-- <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+          <div class="portfolio-card">
+            <div class="portfolio-wrap">
+              <img src="assets/img/projects/extrantetalma.png" class="img-fluid" alt="Extranet Almamater">
+              <div class="portfolio-info">
+                <div class="portfolio-links">
+                  <a href="assets/img/projects/extrantetalma.png" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Aperçu — Extranet"><i class="bx bx-search-alt"></i></a>
+                  <span class="portfolio-link-placeholder" title="Pas de démo en ligne"><i class="bx bx-link-external"></i></span>
+                </div>
+              </div>
+            </div>
+            <div class="portfolio-content">
+              <h4>Extranet Almamater</h4>
+              <p class="portfolio-desc">Portail extranet dédié aux parents et élèves pour consulter informations et documents.</p>
+              <ul class="portfolio-stack">
+                <li>Vue.js</li>
+                <li>Node.js</li>
+                <li>Sequelize</li>
+                <li>MySQL</li>
+                <li>Docker</li>
+                <li>Gitlab CI/CD</li>
+                <li>Azure</li>
+              </ul>
+            </div>
+          </div>
+        </div> -->
+        <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+          <div class="portfolio-card">
+            <div class="portfolio-wrap">
+              <img src="assets/img/projects/h3freelance.png" class="img-fluid" alt="Site freelance H3">
+              <div class="portfolio-info">
+                <div class="portfolio-links">
+                  <a href="assets/img/projects/h3freelance.png" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Aperçu — Site freelance"><i class="bx bx-search-alt"></i></a>
+                  <span class="portfolio-link-placeholder" title="Pas de démo en ligne"><i class="bx bx-link-external"></i></span>
+                </div>
+              </div>
+            </div>
+            <div class="portfolio-content">
+              <h4>Site freelance H3</h4>
+              <p class="portfolio-desc">Application de ventes de services freelance.</p>
+              <ul class="portfolio-stack">
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+                <li>PHP/Symfony</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+          <div class="portfolio-card">
+            <div class="portfolio-wrap">
+              <img src="assets/img/projects/api-docs.png" class="img-fluid" alt="Documentation API prise de rendez-vous">
+              <div class="portfolio-info">
+                <div class="portfolio-links">
+                  <a href="assets/img/projects/api-docs.png" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Aperçu — Documentation API"><i class="bx bx-search-alt"></i></a>
+                  <a href="https://androidapi.herokuapp.com/api/v1/api-docs/" target="_blank" rel="noopener noreferrer" title="Ouvrir la documentation"><i class="bx bx-link-external"></i></a>
+                </div>
+              </div>
+            </div>
+            <div class="portfolio-content">
+              <h4>Documentation API - Prise de rendez-vous</h4>
+              <p class="portfolio-desc">Documentation Swagger d'une API REST pour une application mobile de prise de rendez-vous.</p>
+              <ul class="portfolio-stack">
+                <li>Node.js</li>
+                <li>Sequelize</li>
+                <li>Mysql</li>
+                <li>Swagger</li>
+                <li>REST API</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+          <div class="portfolio-card">
+            <div class="portfolio-wrap">
+              <img src="assets/img/projects/api-tennis.png" class="img-fluid" alt="Documentation API REST">
+              <div class="portfolio-info">
+                <div class="portfolio-links">
+                  <a href="assets/img/projects/api-tennis.png" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Aperçu — Documentation API"><i class="bx bx-search-alt"></i></a>
+                  <a href="" target="_blank" rel="noopener noreferrer" title="Ouvrir la documentation"><i class="bx bx-link-external"></i></a>
+                </div>
+              </div>
+            </div>
+            <div class="portfolio-content">
+              <h4>Documentation API REST</h4>
+              <p class="portfolio-desc">Documentation Swagger d'une API REST.</p>
+              <ul class="portfolio-stack">
+                <li>Java</li>
+                <li>Spring Boot</li>
+                <li>Docker</li>
+                <li>Swagger</li>
+                <li>REST API</li>
+              </ul>
             </div>
           </div>
         </div>
         
         <div class="col-lg-4 col-md-6 portfolio-item filter-web">
-          <div class="portfolio-wrap">
-            <img src="assets/img/projects/pedaalma.png" class="img-fluid" alt="">
-            <div class="portfolio-info">
-              <h4> Interface pédagogique application almamater</h4>
-              <div class="portfolio-links">
-                <a href="assets/img/projects/pedaalma.png" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Interface Pédagogique application gestion scolaire almamater"><i class="bx bx-plus"></i></a>
-                <span class="portfolio-link-placeholder" title="Pas de démo en ligne pour ce projet"><i class="bx bx-link"></i></span>
+          <div class="portfolio-card">
+            <div class="portfolio-wrap">
+              <img src="assets/img/projects/airnes1.png" class="img-fluid" alt="Airnes — Interface client">
+              <div class="portfolio-info">
+                <div class="portfolio-links">
+                  <a href="assets/img/projects/airnes1.png" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Aperçu — Airnes client"><i class="bx bx-search-alt"></i></a>
+                  <span class="portfolio-link-placeholder" title="Pas de démo en ligne"><i class="bx bx-link-external"></i></span>
+                </div>
               </div>
+            </div>
+            <div class="portfolio-content">
+              <h4>Airnes - Interface client</h4>
+              <p class="portfolio-desc">Front-office e-commerce avec catalogue produits, panier et parcours d'achat complet.</p>
+              <ul class="portfolio-stack">
+                <li>React</li>
+                <li>Tailwind</li>
+                <li>Node.js</li>
+                <li>MongoDB/Mongoose</li>
+                <li>Stripe</li>
+              </ul>
             </div>
           </div>
         </div>
         <div class="col-lg-4 col-md-6 portfolio-item filter-web">
-          <div class="portfolio-wrap">
-            <img src="assets/img/projects/extrantetalma.png" class="img-fluid" alt="">
-            <div class="portfolio-info">
-              <h4>Interface extranet application almamater</h4>
-              <div class="portfolio-links">
-                <a href="assets/img/projects/extrantetalma.png" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Interface extranet application almamater"><i class="bx bx-plus"></i></a>
-                <span class="portfolio-link-placeholder" title="Pas de démo en ligne pour ce projet"><i class="bx bx-link"></i></span>
+          <div class="portfolio-card">
+            <div class="portfolio-wrap">
+              <img src="assets/img/projects/airnes2.png" class="img-fluid" alt="Airnes — Interface admin">
+              <div class="portfolio-info">
+                <div class="portfolio-links">
+                  <a href="assets/img/projects/airnes2.png" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Aperçu — Airnes admin"><i class="bx bx-search-alt"></i></a>
+                  <span class="portfolio-link-placeholder" title="Pas de démo en ligne"><i class="bx bx-link-external"></i></span>
+                </div>
               </div>
+            </div>
+            <div class="portfolio-content">
+              <h4>Airnes - Interface admin</h4>
+              <p class="portfolio-desc">Back-office de gestion des commandes, stocks, catalogue et suivi des ventes.</p>
+              <ul class="portfolio-stack">
+                <li>React</li>
+                <li>Tailwind</li>
+                <li>Node.js</li>
+                <li>MongoDB/Mongoose</li>
+                <li>Stripe</li>
+              </ul>
             </div>
           </div>
         </div>
         <div class="col-lg-4 col-md-6 portfolio-item filter-web">
-          <div class="portfolio-wrap">
-            <img src="assets/img/projects/h3freelance.png" class="img-fluid" alt="">
-            <div class="portfolio-info">
-              <h4>Site de vente des services freelance</h4>
-              <div class="portfolio-links">
-                <a href="assets/img/projects/h3freelance.png" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Site de vente des services freelance"><i class="bx bx-plus"></i></a>
-                <span class="portfolio-link-placeholder" title="Pas de démo en ligne pour ce projet"><i class="bx bx-link"></i></span>
+          <div class="portfolio-card">
+            <div class="portfolio-wrap">
+              <img src="assets/img/projects/orientex1.png" class="img-fluid" alt="Orient-Ex — Plateforme mentorat">
+              <div class="portfolio-info">
+                <div class="portfolio-links">
+                  <a href="assets/img/projects/orientex1.png" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Aperçu — Orient-Ex"><i class="bx bx-search-alt"></i></a>
+                  <a href="https://orient-ex.org" target="_blank" rel="noopener noreferrer" title="Ouvrir le site"><i class="bx bx-link-external"></i></a>
+                </div>
               </div>
+            </div>
+            <div class="portfolio-content">
+              <h4>Orient-Ex - Plateforme mentorat</h4>
+              <p class="portfolio-desc">Mise en relation mentors et mentorés avec messagerie et suivi des parcours d'accompagnement.</p>
+              <ul class="portfolio-stack">
+                <li>Vue.js</li>
+                <li>Nuxt</li>
+                <li>Node.js</li>
+                <li>Sequelize</li>
+                <li>MySQL</li>
+              </ul>
             </div>
           </div>
         </div>
         <div class="col-lg-4 col-md-6 portfolio-item filter-web">
-          <div class="portfolio-wrap">
-            <img src="assets/img/projects/api-docs.png" class="img-fluid" alt="">
-            <div class="portfolio-info">
-              <h4>Documentation api application mobile de prise de rendez-vous</h4>
-              <div class="portfolio-links">
-                <a href="assets/img/projects/api-docs.png" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Documentation api application mobile de prise de rendez-vous"><i class="bx bx-plus"></i></a>
-                <a href="https://androidapi.herokuapp.com/api/v1/api-docs/" target="_blank" rel="noopener noreferrer" title="Ouvrir la documentation dans un nouvel onglet"><i class="bx bx-link"></i></a>
+          <div class="portfolio-card">
+            <div class="portfolio-wrap">
+              <img src="assets/img/projects/orientex2.png" class="img-fluid" alt="Orient-Ex — Interface admin">
+              <div class="portfolio-info">
+                <div class="portfolio-links">
+                  <a href="assets/img/projects/orientex2.png" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Aperçu — Orient-Ex admin"><i class="bx bx-search-alt"></i></a>
+                  <a href="https://orient-ex.org" target="_blank" rel="noopener noreferrer" title="Ouvrir le site"><i class="bx bx-link-external"></i></a>
+                </div>
               </div>
             </div>
-          </div>
-        </div>
-        
-        <div class="col-lg-4 col-md-6 portfolio-item filter-web">
-          <div class="portfolio-wrap">
-            <img src="assets/img/projects/airnes1.png" class="img-fluid" alt="">
-            <div class="portfolio-info">
-              <h4>Interface client site e-commerce Airnes</h4>
-              <div class="portfolio-links">
-                <a href="assets/img/projects/airnes1.png" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Interface client site e-commerce Airnes"><i class="bx bx-plus"></i></a>
-                <span class="portfolio-link-placeholder" title="Pas de démo en ligne pour ce projet"><i class="bx bx-link"></i></span>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-4 col-md-6 portfolio-item filter-web">
-          <div class="portfolio-wrap">
-            <img src="assets/img/projects/airnes2.png" class="img-fluid" alt="">
-            <div class="portfolio-info">
-              <h4>Interface admin site e-commerce Airnes</h4>
-              <div class="portfolio-links">
-                <a href="assets/img/projects/airnes2.png" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Interface admin site e-commerce Airnes"><i class="bx bx-plus"></i></a>
-                <span class="portfolio-link-placeholder" title="Pas de démo en ligne pour ce projet"><i class="bx bx-link"></i></span>
-              </div>
+            <div class="portfolio-content">
+              <h4>Orient-Ex - Interface admin</h4>
+              <p class="portfolio-desc">Administration des utilisateurs, contenus et parcours de la plateforme de mentorat.</p>
+              <ul class="portfolio-stack">
+                <li>Vue.js</li>
+                <li>Nuxt</li>
+                <li>Node.js</li>
+                <li>Sequelize</li>
+                <li>MySQL</li>
+                <li>Docker</li>
+                <li>Nginx</li>
+                <li>Gitlab CI/CD</li>
+              </ul>
             </div>
           </div>
         </div>
         <div class="col-lg-4 col-md-6 portfolio-item filter-web">
-          <div class="portfolio-wrap">
-            <img src="assets/img/projects/orientex1.png" class="img-fluid" alt="">
-            <div class="portfolio-info">
-              <h4>Plateforme de mise en relation mentors et mentorés </h4>
-              <div class="portfolio-links">
-                <a href="assets/img/projects/orientex1.png" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Plateforme de mise en relation mentors et mentorés"><i class="bx bx-plus"></i></a>
-                <a href="https://orient-ex.org" target="_blank" rel="noopener noreferrer" title="Ouvrir le site dans un nouvel onglet"><i class="bx bx-link"></i></a>
+          <div class="portfolio-card">
+            <div class="portfolio-wrap">
+              <img src="assets/img/projects/openpay1.png" class="img-fluid" alt="OpenPay — Plateforme de paiement">
+              <div class="portfolio-info">
+                <div class="portfolio-links">
+                  <a href="assets/img/projects/openpay1.png" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Aperçu — OpenPay"><i class="bx bx-search-alt"></i></a>
+                  <a href="https://openpay.cg" target="_blank" rel="noopener noreferrer" title="Ouvrir le site"><i class="bx bx-link-external"></i></a>
+                </div>
               </div>
+            </div>
+            <div class="portfolio-content">
+              <h4>OpenPay - Plateforme de paiement</h4>
+              <p class="portfolio-desc">Solution FinTech de paiement mobile via opérateurs téléphoniques pour particuliers et professionnels.</p>
+              <ul class="portfolio-stack">
+                <li>Vue.js</li>
+                <li>Nuxt</li>
+                <li>PrimeVue</li>
+                <li>Node.js</li>
+                <li>Sequelize</li>
+                <li>MySQL</li>
+                <li>Docker</li>
+                <li>Nginx</li>
+                <li>Gitlab CI/CD</li>
+              </ul>
             </div>
           </div>
         </div>
         <div class="col-lg-4 col-md-6 portfolio-item filter-web">
-          <div class="portfolio-wrap">
-            <img src="assets/img/projects/orientex2.png" class="img-fluid" alt="">
-            <div class="portfolio-info">
-              <h4>Interface admin de la plateforme de mentorat</h4>
-              <div class="portfolio-links">
-                <a href="assets/img/projects/orientex2.png" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Interface admin de la plateforme de mentorat"><i class="bx bx-plus"></i></a>
-                <a href="https://orient-ex.org" target="_blank" rel="noopener noreferrer" title="Ouvrir le site dans un nouvel onglet"><i class="bx bx-link"></i></a>
+          <div class="portfolio-card">
+            <div class="portfolio-wrap">
+              <img src="assets/img/projects/openpay2.png" class="img-fluid" alt="OpenPay — Interface partenaire">
+              <div class="portfolio-info">
+                <div class="portfolio-links">
+                  <a href="assets/img/projects/openpay2.png" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Aperçu — OpenPay partenaire"><i class="bx bx-search-alt"></i></a>
+                  <a href="https://openpay.cg" target="_blank" rel="noopener noreferrer" title="Ouvrir le site"><i class="bx bx-link-external"></i></a>
+                </div>
               </div>
+            </div>
+            <div class="portfolio-content">
+              <h4>OpenPay - Interface partenaire</h4>
+              <p class="portfolio-desc">Espace partenaires pour le suivi des transactions, rapports et intégrations API.</p>
+              <ul class="portfolio-stack">
+                <li>Vue.js</li>
+                <li>Nuxt</li>
+                <li>PrimeVue</li>
+                <li>Node.js</li>
+                <li>Sequelize</li>
+                <li>MySQL</li>
+                <li>Docker</li>
+                <li>WebSocket</li>
+                <li>Nginx</li>
+                <li>Gitlab CI/CD</li>
+              </ul>
             </div>
           </div>
         </div>
         <div class="col-lg-4 col-md-6 portfolio-item filter-web">
-          <div class="portfolio-wrap">
-            <img src="assets/img/projects/openpay1.png" class="img-fluid" alt="">
-            <div class="portfolio-info">
-              <h4>Plateforme de paiement mobile basée sur les opérateurs de téléphonie</h4>
-              <div class="portfolio-links">
-                <a href="assets/img/projects/openpay1.png" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Plateforme de paiement mobile basée sur les opérateurs de téléphonie"><i class="bx bx-plus"></i></a>
-                <a href="https://openpay.cg" target="_blank" rel="noopener noreferrer" title="Ouvrir le site dans un nouvel onglet"><i class="bx bx-link"></i></a>
+          <div class="portfolio-card">
+            <div class="portfolio-wrap">
+              <img src="assets/img/projects/openpay3.png" class="img-fluid" alt="OpenPay — Interface admin">
+              <div class="portfolio-info">
+                <div class="portfolio-links">
+                  <a href="assets/img/projects/openpay3.png" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Aperçu — OpenPay admin"><i class="bx bx-search-alt"></i></a>
+                  <a href="https://openpay.cg" target="_blank" rel="noopener noreferrer" title="Ouvrir le site"><i class="bx bx-link-external"></i></a>
+                </div>
               </div>
             </div>
-          </div>
-        </div>
-        <div class="col-lg-4 col-md-6 portfolio-item filter-web">
-          <div class="portfolio-wrap">
-            <img src="assets/img/projects/openpay2.png" class="img-fluid" alt="">
-            <div class="portfolio-info">
-              <h4>Interface partenaire de la plateforme de paiement mobile</h4>
-              <div class="portfolio-links">
-                <a href="assets/img/projects/openpay2.png" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Plateforme de paiement mobile basée sur les opérateurs de téléphonie"><i class="bx bx-plus"></i></a>
-                <a href="https://openpay.cg" target="_blank" rel="noopener noreferrer" title="Ouvrir le site dans un nouvel onglet"><i class="bx bx-link"></i></a>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-4 col-md-6 portfolio-item filter-web">
-          <div class="portfolio-wrap">
-            <img src="assets/img/projects/openpay3.png" class="img-fluid" alt="">
-            <div class="portfolio-info">
-              <h4>Interface admin de la plateforme de paiement mobile</h4>
-              <div class="portfolio-links">
-                <a href="assets/img/projects/openpay3.png" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Plateforme de paiement mobile basée sur les opérateurs de téléphonie"><i class="bx bx-plus"></i></a>
-                <a href="https://openpay.cg" target="_blank" rel="noopener noreferrer" title="Ouvrir le site dans un nouvel onglet"><i class="bx bx-link"></i></a>
-              </div>
+            <div class="portfolio-content">
+              <h4>OpenPay - Interface admin</h4>
+              <p class="portfolio-desc">Console d'administration des utilisateurs, transactions et paramètres système.</p>
+              <ul class="portfolio-stack">
+                <li>Tailwind</li>
+                <li>Vue.js</li>
+                <li>Nuxt</li>
+                <li>PrimeVue</li>
+                <li>Node.js</li>
+                <li>Sequelize</li>
+                <li>MySQL</li>
+                <li>Docker</li>
+                <li>Nginx</li>
+                <li>Gitlab CI/CD</li>
+                <li>WebSocket</li>
+              </ul>
             </div>
           </div>
         </div>
 
         <!-- MOBILE -->
-       
 
         <div class="col-lg-4 col-md-6 portfolio-item filter-mobile">
-          <div class="portfolio-wrap">
-            <img src="assets/img/projects/alma1.jpeg" class="img-fluid" alt="">
-            <div class="portfolio-info">
-              <h4>Application mobile Almamater</h4>
-              <div class="portfolio-links">
-                <a href="assets/img/projects/alma1.jpeg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Application mobile Almamater"><i class="bx bx-plus"></i></a>
-                <span class="portfolio-link-placeholder" title="Pas de démo en ligne pour ce projet"><i class="bx bx-link"></i></span>
+          <div class="portfolio-card">
+            <div class="portfolio-wrap">
+              <img src="assets/img/projects/hb1.png" class="img-fluid" alt="Application mobile bancaire agrégatrice">
+              <div class="portfolio-info">
+                <div class="portfolio-links">
+                  <a href="assets/img/projects/hb1.png" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Application mobile bancaire agrégatrice"><i class="bx bx-search-alt"></i></a>
+                  <span class="portfolio-link-placeholder" title="Pas de démo en ligne"><i class="bx bx-link-external"></i></span>
+                </div>
               </div>
+            </div>
+            <div class="portfolio-content">
+              <h4>Application mobile bancaire agrégatrice (Open Banking)</h4>
+              <p class="portfolio-desc">permettant de centraliser plusieurs comptes bancaires via Open Banking. Implémentation de fonctionnalités de gestion financière (consultation de comptes, virements, création de cartes virtuelles) avec authentification sécurisée.</p>
+              <ul class="portfolio-stack">
+                <li>React Native</li>
+                <li>Expo</li>
+                <li>Java</li>
+                <li>Spring Boot</li>
+                <li>PostgreSQL</li>
+                <li>Docker</li>
+                <li>keycloak</li>
+                <li>Truelayer</li>
+                <li>GitLab</li>
+                <li>Stripe</li>
+              </ul>
             </div>
           </div>
         </div>
         <div class="col-lg-4 col-md-6 portfolio-item filter-mobile">
-          <div class="portfolio-wrap">
-            <img src="assets/img/projects/alma2.jpeg" class="img-fluid" alt="">
-            <div class="portfolio-info">
-              <h4>Application mobile Almamater</h4>
-              <div class="portfolio-links">
-                <a href="assets/img/projects/alma2.jpeg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Application mobile Almamater"><i class="bx bx-plus"></i></a>
-                <span class="portfolio-link-placeholder" title="Pas de démo en ligne pour ce projet"><i class="bx bx-link"></i></span>
+          <div class="portfolio-card">
+            <div class="portfolio-wrap">
+              <img src="assets/img/projects/hb2.png" class="img-fluid" alt="Application mobile bancaire agrégatrice">
+              <div class="portfolio-info">
+                <div class="portfolio-links">
+                  <a href="assets/img/projects/hb2.png" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Application mobile bancaire agrégatrice"><i class="bx bx-search-alt"></i></a>
+                  <span class="portfolio-link-placeholder" title="Pas de démo en ligne"><i class="bx bx-link-external"></i></span>
+                </div>
               </div>
+            </div>
+            <div class="portfolio-content">
+              <h4>Application mobile bancaire agrégatrice (Open Banking)</h4>
+              <p class="portfolio-desc">permettant de centraliser plusieurs comptes bancaires via Open Banking. Implémentation de fonctionnalités de gestion financière (consultation de comptes, virements, création de cartes virtuelles) avec authentification sécurisée.</p>
+              <ul class="portfolio-stack">
+                <li>React Native</li>
+                <li>Expo</li>
+                <li>Java</li>
+                <li>Spring Boot</li>
+                <li>PostgreSQL</li>
+                <li>Docker</li>
+                <li>keycloak</li>
+                <li>Truelayer</li>
+                <li>GitLab</li>
+                <li>Stripe</li>
+              </ul>
             </div>
           </div>
         </div>
         <div class="col-lg-4 col-md-6 portfolio-item filter-mobile">
-          <div class="portfolio-wrap">
-            <img src="assets/img/projects/alma3.jpeg" class="img-fluid" alt="">
-            <div class="portfolio-info">
-              <h4>Application mobile Almamater</h4>
-              <div class="portfolio-links">
-                <a href="assets/img/projects/alma3.jpeg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Application mobile Almamater"><i class="bx bx-plus"></i></a>
-                <span class="portfolio-link-placeholder" title="Pas de démo en ligne pour ce projet"><i class="bx bx-link"></i></span>
+          <div class="portfolio-card">
+            <div class="portfolio-wrap">
+              <img src="assets/img/projects/hb3.png" class="img-fluid" alt="Application mobile bancaire agrégatrice">
+              <div class="portfolio-info">
+                <div class="portfolio-links">
+                  <a href="assets/img/projects/hb3.png" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Application mobile bancaire agrégatrice"><i class="bx bx-search-alt"></i></a>
+                  <span class="portfolio-link-placeholder" title="Pas de démo en ligne"><i class="bx bx-link-external"></i></span>
+                </div>
               </div>
             </div>
-          </div>
-        </div>
-        <!--  -->
-        <div class="col-lg-4 col-md-6 portfolio-item filter-mobile">
-          <div class="portfolio-wrap">
-            <img src="assets/img/projects/loukka1.jpeg" class="img-fluid" alt="">
-            <div class="portfolio-info">
-              <h4>Application mobile de localisation et de decouverte des meilleurs établissements non localisables facilement</h4>
-              <div class="portfolio-links">
-                <a href="assets/img/projects/loukka1.jpeg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Application mobile de localisation et de decouverte des meilleurs établissements non localisables facilement"><i class="bx bx-plus"></i></a>
-                <span class="portfolio-link-placeholder" title="Pas de démo en ligne pour ce projet"><i class="bx bx-link"></i></span>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-4 col-md-6 portfolio-item filter-mobile">
-          <div class="portfolio-wrap">
-            <img src="assets/img/projects/loukka2.jpeg" class="img-fluid" alt="">
-            <div class="portfolio-info">
-              <h4>Application mobile de localisation et de decouverte des meilleurs établissements non localisables facilement</h4>
-              <div class="portfolio-links">
-                <a href="assets/img/projects/loukka2.jpeg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Application mobile de localisation et de decouverte des meilleurs établissements non localisables facilement"><i class="bx bx-plus"></i></a>
-                <span class="portfolio-link-placeholder" title="Pas de démo en ligne pour ce projet"><i class="bx bx-link"></i></span>
-              </div>
+            <div class="portfolio-content">
+              <h4>Application mobile bancaire agrégatrice (Open Banking)</h4>
+              <p class="portfolio-desc">permettant de centraliser plusieurs comptes bancaires via Open Banking. Implémentation de fonctionnalités de gestion financière (consultation de comptes, virements, création de cartes virtuelles) avec authentification sécurisée.</p>
+              <ul class="portfolio-stack">
+                <li>React Native</li>
+                <li>Expo</li>
+                <li>Java</li>
+                <li>Spring Boot</li>
+                <li>PostgreSQL</li>
+                <li>Docker</li>
+                <li>keycloak</li>
+                <li>Truelayer</li>
+                <li>GitLab</li>
+                <li>Stripe</li>
+              </ul>
             </div>
           </div>
         </div>
         <div class="col-lg-4 col-md-6 portfolio-item filter-mobile">
-          <div class="portfolio-wrap">
-            <img src="assets/img/projects/loukka4.jpeg" class="img-fluid" alt="">
-            <div class="portfolio-info">
-              <h4>Application mobile de localisation et de decouverte des meilleurs établissements non localisables facilement</h4>
-              <div class="portfolio-links">
-                <a href="assets/img/projects/loukka4.jpeg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Application mobile de localisation et de decouverte des meilleurs établissements non localisables facilement"><i class="bx bx-plus"></i></a>
-                <span class="portfolio-link-placeholder" title="Pas de démo en ligne pour ce projet"><i class="bx bx-link"></i></span>
+          <div class="portfolio-card">
+            <div class="portfolio-wrap">
+              <img src="assets/img/projects/loukka1.jpeg" class="img-fluid" alt="Loukka — Découverte">
+              <div class="portfolio-info">
+                <div class="portfolio-links">
+                  <a href="assets/img/projects/loukka1.jpeg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Aperçu — Loukka"><i class="bx bx-search-alt"></i></a>
+                  <span class="portfolio-link-placeholder" title="Pas de démo en ligne"><i class="bx bx-link-external"></i></span>
+                </div>
               </div>
+            </div>
+            <div class="portfolio-content">
+              <h4>Loukka</h4>
+              <p class="portfolio-desc">Application de géolocalisation pour découvrir des établissements difficilement repérables.</p>
+              <ul class="portfolio-stack">
+                <li>React Native</li>
+                <li>Expo</li>
+                <li>Maps API</li>
+                <li>Docker</li>
+                <li>Node.js</li>
+                <li>Sequelize</li>
+                <li>PostgreSQL</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 portfolio-item filter-mobile">
+          <div class="portfolio-card">
+            <div class="portfolio-wrap">
+              <img src="assets/img/projects/loukka2.jpeg" class="img-fluid" alt="Loukka — Carte">
+              <div class="portfolio-info">
+                <div class="portfolio-links">
+                  <a href="assets/img/projects/loukka2.jpeg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Aperçu — Loukka"><i class="bx bx-search-alt"></i></a>
+                  <span class="portfolio-link-placeholder" title="Pas de démo en ligne"><i class="bx bx-link-external"></i></span>
+                </div>
+              </div>
+            </div>
+            <div class="portfolio-content">
+              <h4>Loukka</h4>
+              <p class="portfolio-desc">Application de géolocalisation pour découvrir des établissements difficilement repérables.</p>
+              <ul class="portfolio-stack">
+                <li>React Native</li>
+                <li>Expo</li>
+                <li>Maps API</li>
+                <li>Docker</li>
+                <li>Node.js</li>
+                <li>Sequelize</li>
+                <li>PostgreSQL</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 portfolio-item filter-mobile">
+          <div class="portfolio-card">
+            <div class="portfolio-wrap">
+              <img src="assets/img/projects/loukka4.jpeg" class="img-fluid" alt="Loukka — Fiche établissement">
+              <div class="portfolio-info">
+                <div class="portfolio-links">
+                  <a href="assets/img/projects/loukka4.jpeg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Aperçu — Loukka"><i class="bx bx-search-alt"></i></a>
+                  <span class="portfolio-link-placeholder" title="Pas de démo en ligne"><i class="bx bx-link-external"></i></span>
+                </div>
+              </div>
+            </div>
+            <div class="portfolio-content">
+              <h4>Loukka</h4>
+              <p class="portfolio-desc">Application de géolocalisation pour découvrir des établissements difficilement repérables.</p>
+              <ul class="portfolio-stack">
+                <li>React Native</li>
+                <li>Expo</li>
+                <li>Maps API</li>
+                <li>Docker</li>
+                <li>Node.js</li>
+                <li>Sequelize</li>
+                <li>PostgreSQL</li>
+              </ul>
             </div>
           </div>
         </div>

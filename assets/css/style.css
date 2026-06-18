@@ -1169,6 +1169,113 @@ section .container {
   right: 15px;
 }
 
+/* Projets — cartes avec description et stack visibles */
+#projets .portfolio-card {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 8px;
+  overflow: hidden;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+#projets .portfolio-card:hover {
+  border-color: rgba(24, 210, 110, 0.35);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.35);
+}
+
+#projets .portfolio-wrap::before,
+#projets .portfolio-wrap .portfolio-info::before,
+#projets .portfolio-wrap .portfolio-info::after {
+  display: none;
+}
+
+#projets .portfolio-wrap .portfolio-info {
+  background: rgba(0, 0, 0, 0.55);
+}
+
+#projets .portfolio-wrap {
+  background: #111;
+}
+
+#projets .portfolio-wrap img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  object-position: top center;
+  display: block;
+}
+
+#projets .portfolio-wrap .portfolio-links a,
+#projets .portfolio-link-placeholder {
+  width: 44px;
+  height: 44px;
+  line-height: 44px;
+  border-radius: 50%;
+  background: rgba(24, 210, 110, 0.15);
+  border: 1px solid rgba(24, 210, 110, 0.4);
+  font-size: 22px;
+  display: inline-block;
+  text-align: center;
+}
+
+#projets .portfolio-link-placeholder {
+  opacity: 0.45;
+  cursor: not-allowed;
+}
+
+#projets .portfolio-wrap .portfolio-links a:hover {
+  background: #18d26e;
+  color: #fff;
+}
+
+#projets .portfolio-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  padding: 18px 20px 20px;
+}
+
+#projets .portfolio-content h4 {
+  font-size: 17px;
+  font-weight: 600;
+  color: #fff;
+  margin: 0 0 8px;
+  line-height: 1.35;
+}
+
+#projets .portfolio-desc {
+  flex: 1;
+  color: rgba(255, 255, 255, 0.72);
+  font-size: 14px;
+  line-height: 1.55;
+  margin: 0 0 14px;
+}
+
+#projets .portfolio-stack {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+#projets .portfolio-stack li {
+  font-size: 11px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: #18d26e;
+  background: rgba(24, 210, 110, 0.12);
+  border: 1px solid rgba(24, 210, 110, 0.28);
+  border-radius: 4px;
+  padding: 4px 9px;
+  line-height: 1.2;
+}
+
 /*--------------------------------------------------------------
 # Portfolio Details
 --------------------------------------------------------------*/
