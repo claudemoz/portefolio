@@ -1,38 +1,28 @@
-<!DOCTYPE html>
-<html lang="en">
+﻿<!DOCTYPE html>
+<html lang="fr">
 
 <head>
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title>Portfolio</title>
-  <meta content="" name="description">
-  <meta content="" name="keywords">
+  <title>Claude Tsiangana - Développeur Fullstack</title>
+  <meta name="description" content="Portfolio de Claude Tsiangana, développeur Fullstack web et mobile. Expériences, projets et certifications.">
+  <meta name="keywords" content="développeur fullstack, React, Vue.js, Node.js, portfolio">
 
-  <!-- Favicons -->
-  <!-- <link href="assets/img/favicon.png" rel="icon">
-  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon"> -->
-
-  <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Poppins:wght@600;700&family=Raleway:wght@600;700&display=swap" rel="stylesheet">
 
   <!-- Vendor CSS Files -->
   <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
   <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
   <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
   <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
-  <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
-  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
 
   <!-- Template Main CSS File -->
   <link href="assets/css/style.css" rel="stylesheet">
 
-  <!-- =======================================================
-  * Template Name: Personal - v4.10.0
-  * Template URL: https://bootstrapmade.com/personal-free-resume-bootstrap-template/
-  * Author: BootstrapMade.com
-  * License: https://bootstrapmade.com/license/
-  ======================================================== -->
+  <meta name="theme-color" content="#040404">
 </head>
 
 <body>
@@ -41,11 +31,14 @@
   <header id="header">
     <div class="container">
 
-      <img src="assets/img/profile/photo.png" alt="Claude Tsiangana" width="200" height="200" loading="eager" class="header-photo img-fluid">
+      <img src="assets/img/profile/photo.png" alt="Claude Tsiangana" width="200" height="200" loading="eager" fetchpriority="high" decoding="async" class="header-photo img-fluid">
       <h1><a href="index.html">Claude Tsiangana</a></h1>
-      <!-- Uncomment below if you prefer to use an image logo -->
-      <!-- <a href="index.html" class="mr-auto"><img src="assets/img/logo.png" alt="" class="img-fluid"></a> -->
-      <h2>Développeur FullStack <span>Web et Mobile</span></h2>
+      <h2>Développeur <span>Fullstack</span></h2>
+      <p class="header-lead">Web & mobile · API · DevOps · IA - 4 ans d'expérience</p>
+      <div class="header-cta">
+        <a href="#projets" class="header-cta__btn header-cta__btn--primary nav-link">Voir mes projets</a>
+        <a href="#experience" class="header-cta__btn nav-link">Mon parcours</a>
+      </div>
       <div class="header-contact" role="group" aria-label="Moyens de contact">
         <a class="header-contact-chip" href="mailto:claudetsiangana@gmail.com">
           <span class="header-contact-chip__ico" aria-hidden="true"><i class="bi bi-envelope-fill"></i></span>
@@ -55,22 +48,14 @@
           <span class="header-contact-chip__ico" aria-hidden="true"><i class="bi bi-telephone-fill"></i></span>
           <span class="header-contact-chip__txt">07&nbsp;45&nbsp;31&nbsp;82&nbsp;28</span>
         </a>
-        <!-- <a class="header-contact-chip header-contact-chip--cv" href="assets/cv/CV-Claude-Mermoze-Tsiangana.pdf" download="CV-Claude-Mermoze-Tsiangana.pdf">
-          <span class="header-contact-chip__ico" aria-hidden="true"><i class="bi bi-file-earmark-arrow-down-fill"></i></span>
-          <span class="header-contact-chip__txt">Mon CV&nbsp;</span>
-        </a> -->
-         <!-- <a class="header-contact-chip" href="assets/cv/CV_Claude_Tsiangana_Fullstack_Developer.pdf" download="CV_Claude_Tsiangana_Fullstack_Developer.pdf">
-          <span class="header-contact-chip__ico" aria-hidden="true"><i class="bi bi-file-earmark-arrow-down-fill"></i></span>
-          <span class="header-contact-chip__txt">Voir mon CV&nbsp;</span>
-        </a> -->
       </div>
       <nav id="navbar" class="navbar">
         <ul>
           <li><a class="nav-link active" href="#header">Accueil</a></li>
-          <li><a class="nav-link" href="#apropos">A propos</a></li>
-          <li><a class="nav-link" href="#parcours">Parcours</a></li>
-          <li><a class="nav-link" href="#certificats">Certifications</a></li>
+          <li><a class="nav-link" href="#competences">Compétences</a></li>
+          <li><a class="nav-link" href="#experience">Expérience</a></li>
           <li><a class="nav-link" href="#projets">Projets</a></li>
+          <li><a class="nav-link" href="#certificats">Certifications</a></li>
         </ul>
         <i class="bi bi-list mobile-nav-toggle"></i>
       </nav><!-- .navbar -->
@@ -83,308 +68,699 @@
     </div>
   </header><!-- End Header -->
 
-  <!-- ======= About Section ======= -->
-  <section id="apropos" class="about">
-
-    <!-- ======= About Me ======= -->
-    <div class="about-me container">
-
-      <div class="section-title">
-        <h2>A propos</h2>
-        <p>Qui suis-je ?</p>
-      </div>
-
-      <div class="row justify-content-start align-items-start">
-        <div class="col-lg-12 content" data-aos="fade-up">
-          <h3>Je suis</h3>
-          <p class="fst-italic">
-           Développeur Fullstack avec plus de 4 ans d’expérience, je conçois et développe des applications web et mobiles 
-           ainsi que des API backend fiables et évolutives, avec intégration des modèles de langage (LLM) et les pratiques DevOps, 
-           notamment la mise en place de pipelines CI/CD et l’utilisation d’outils tels que Docker, Kubernetes et Azure.
-          </p>
-        </div>
-      </div>
-
-    </div><!-- End About Me -->
-
-
-    <!-- ======= Skills  ======= -->
-    <div class="skills container">
-
-      <div class="section-title">
-        <h2>Compétences</h2>
-      </div>
-
-      <div class="row row-cols-1 row-cols-lg-5 g-3 g-lg-4 align-items-start">
-        <div class="col">
-          <h3 class="skills-category-title">Frontend</h3>
-          <ul>
-            <li><i class="bi bi-chevron-right"></i> <strong>Html / Css / Tailwind</strong></li>
-            <li><i class="bi bi-chevron-right"></i> <strong>Shadcn / Primevue</strong></li>
-            <li><i class="bi bi-chevron-right"></i> <strong>JavaScript / TypeScript</strong></li>
-            <li><i class="bi bi-chevron-right"></i> <strong>Angular</strong></li>
-            <li><i class="bi bi-chevron-right"></i> <strong>Vue js / Nuxt js</strong></li>
-            <li><i class="bi bi-chevron-right"></i> <strong>React js</strong></li>
-          </ul>
-        </div>
-        <div class="col">
-          <h3 class="skills-category-title">Mobile</h3>
-          <ul>
-            <li><i class="bi bi-chevron-right"></i> <strong>React Native</strong></li>
-            <li><i class="bi bi-chevron-right"></i> <strong>Expo</strong></li>
-            <li><i class="bi bi-chevron-right"></i> <strong>OTA Updates</strong></li>
-            <!-- <li><i class="bi bi-chevron-right"></i> <strong>Firebase</strong></li> -->
-          </ul>
-        </div>
-        <div class="col">
-          <h3 class="skills-category-title">Backend</h3>
-          <ul>
-            <li><i class="bi bi-chevron-right"></i> <strong>NodeJs / NestJS</strong></li>
-            <li><i class="bi bi-chevron-right"></i> <strong>Golang / Gin</strong></li>
-            <li><i class="bi bi-chevron-right"></i> <strong>Spring Boot / Java</strong></li>
-            <li><i class="bi bi-chevron-right"></i> <strong>Symfony / Php</strong></li>
-          </ul>
-        </div>
-        <div class="col">
-          <h3 class="skills-category-title">Databases / ORM</h3>
-          <ul>
-            <li><i class="bi bi-chevron-right"></i> <strong>PostgreSQL</strong></li>
-            <li><i class="bi bi-chevron-right"></i> <strong>MySQL</strong></li>
-            <li><i class="bi bi-chevron-right"></i> <strong>MongoDB</strong></li>
-            <li><i class="bi bi-chevron-right"></i> <strong>Redis</strong></li>
-            <li><i class="bi bi-chevron-right"></i> <strong>Sequelize / Prisma</strong></li>
-            <li><i class="bi bi-chevron-right"></i> <strong>GORM / Hibernate</strong></li>
-            <li><i class="bi bi-chevron-right"></i> <strong>Mongoose</strong></li>
-          </ul>
-        </div>
-        <div class="col">
-          <h3 class="skills-category-title">Infrastructure</h3>
-          <ul>
-            <li><i class="bi bi-chevron-right"></i> <strong>Git / GitHub</strong></li>
-            <li><i class="bi bi-chevron-right"></i> <strong>GitLab CI/CD</strong></li>
-            <li><i class="bi bi-chevron-right"></i> <strong>Docker / Nginx</strong></li>
-            <li><i class="bi bi-chevron-right"></i> <strong>Kubernetes / Helm / ArgoCD</strong></li>
-            <li><i class="bi bi-chevron-right"></i> <strong>Azure / AWS</strong></li>
-            <li><i class="bi bi-chevron-right"></i> <strong>Sentry / PostHog / ELK</strong></li>
-            <li><i class="bi bi-chevron-right"></i> <strong>WebSockets / Socket.io</strong></li>
-            <li><i class="bi bi-chevron-right"></i> <strong>Keycloak / OpenAI API</strong></li>
-          </ul>
-        </div>
-      </div>
-
-    </div><!-- End Skills -->
-
-
-    <!-- ======= Testimonials ======= -->
-    <div class="testimonials container">
-
-      <!-- <div class="section-title">
-        <h2>Veille technologie</h2>
-      </div> -->
-
-      <!-- <div class="testimonials-slider swiper" data-aos="fade-up" data-aos-delay="100">
-        <div class="swiper-wrapper">
-
-          <div class="swiper-slide">
-            <div class="testimonial-item">
-              <p>
-                <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-                Node.Js est une technologie qui offre un environnement pour exécuter les serveurs développés en JavaScript.
-                 Cette technologie est basée sur le très puissant moteur V8 qui équipe également le navigateur Google Chrome.<br>
-                 Il exécute plusieurs requêtes vers le serveur simultanément, car c'est un système « single thread » non bloquant. 
-                 Donc capable de gérer une multitude de requêtes sans attendre que la requête lancée précédemment soit terminée.
-                <i class="bx bxs-quote-alt-right quote-icon-right"></i>
-              </p>
-              <img src="assets/img/node.jpg" class="testimonial-img" alt="">
-              <h3>Node js</h3>
-            </div>
-          </div>
-
-          <div class="swiper-slide">
-            <div class="testimonial-item">
-              <p>
-                <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-                Vue.js est un framework permettant de développer des interfaces utilisateur.
-                Il est développé entièrement en TypeScript depuis sa version 3.<br>.<br>
-                Les performances de Vue sont excellentes et elles surpassent même celles de React sur le rendu et la mise à jour du DOM.
-                Vue.js a des algorithmes de calcul des mutations nécessaires qui s'avèrent plus performants et légers que ceux de React.
-                <i class="bx bxs-quote-alt-right quote-icon-right"></i>
-              </p>
-              <img src="assets/img/vue.png" class="testimonial-img" alt="">
-              <h3>vue js</h3>
-            </div>
-          </div>
-
-          <div class="swiper-slide">
-            <div class="testimonial-item">
-              <p>
-                <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-                Flutter est un framework open-source de développement
-                 d'application mobiles créé par Google en 2017.
-                Il utilise Dart qui est un langage créé par Google qui peut être compilé 
-                en code bas niveau ou transpilé en JavaScript.<br>
-                Flutter permet d'utiliser ses applications sur les navigateurs Web 
-                et sur Desktop. Ce qui fait de lui le seul 
-                framework compatible toute plateforme (Android, iOS, Web et application Desktop) <br>
-                <i class="bx bxs-quote-alt-right quote-icon-right"></i>
-              </p>
-              <img src="assets/img/flutter.jpg" class="testimonial-img" alt="">
-              <h3>Flutter</h3>
-            </div>
-          </div>
-          <div class="swiper-slide">
-            <div class="testimonial-item">
-              <p>
-                <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-                 Le Web3 ou Web 3.0 est un terme utilisé pour désigner l'idée d'un web décentralisé exploitant la technologie
-                 des chaînes de blocs (blockchain), se voulant ainsi le successeur du Web 2.0, terme utilisé pour désigner le
-                 web « social »1.<br><br><br><br><br>
-                <i class="bx bxs-quote-alt-right quote-icon-right"></i>
-              </p>
-              <img src="assets/img/web3.0.jpg" class="testimonial-img" alt="">
-              <h3>Web 3</h3>
-            </div>
-          </div>
-
-          </div>
-
-        </div>
-        <div class="swiper-pagination"></div>
-      </div> -->
-
-      <div class="owl-carousel testimonials-carousel">
-
-      </div>
-
-    </div>
-
-  </section>
-
-  <!-- ======= Resume Section ======= -->
-  <section id="parcours" class="resume">
+  <!-- ======= Compétences Section ======= -->
+  <section id="competences" class="competences">
     <div class="container">
 
       <div class="section-title">
-        <h2>Parcours</h2>
-        <p>Formation &amp; expériences</p>
+        <h2>Compétences</h2>
+        <p>Stack technique</p>
       </div>
-      <div class="row gx-lg-5 gy-5">
-        <div class="col-lg-6 order-lg-2">
-          <h3 class="resume-title mb-4">Expériences professionnelles</h3>
-          <div class="resume-item">
-            <h4>Fondateur &amp; Développeur Fullstack Golang, React Native, Angular</h4>
-            <h5>Avril 2026 - Aujourd'hui</h5>
-            <p class="resume-where"><em>STOOGO · <a href="https://stoogo.com/" target="_blank" rel="noopener noreferrer">Démo en ligne</a></em></p>
-            <ul>
-              <li>Conception et développement d'une application mobile de mise en relation entre étudiants</li>
-              <li>Développement du back-office avec Angular</li>
-              <li>Mise en place de la messagerie et de notifications en temps réel</li>
-              <li>Développement d'un système de matching pour la mise en relation</li>
-              <li>Intégration de fonctionnalités d'IA générative : analyse de CV, génération de lettres de motivation et automatisation des candidatures via LLM / OpenAI API</li>
-              <li>Conteneurisation du backend avec Docker et mise en place de CI/CD avec GitLab CI/CD</li>
-              <li>Automatisation des déploiements mobiles sur Android et iOS via OTA Updates</li>
-              <li>Mise en place du suivi des erreurs et des performances avec Sentry</li>
-              <li>Analyse des parcours et comportements utilisateurs avec PostHog</li>
-            </ul>
-            <p class="resume-meta mb-2"><strong>Stack</strong></p>
-            <p>Angular, React Native, Go, WebSockets, Docker, PostgreSQL, PostHog, Sentry, OpenAI API</p>
-          </div>
-          <div class="resume-item">
-            <h4>Développeur Fullstack web et mobile : React.js, React Native, Vue.js, Node.js, Nest.js</h4>
-            <h5>Septembre 2022 - Juillet 2026</h5>
-            <p class="resume-where"><em>Agence TILD Paris La Défense</em></p>
-            <ul>
-              <li>Conception et développement des fonctionnalités d'une plateforme de gestion scolaire (Almamater) intégrant des modules CRM, ERP, Extranet et application mobile</li>
-              <li>Intégration de l'ancrage de diplômes et documents sur blockchain afin de garantir leur authenticité</li>
-              <li>Résolution des incidents, optimisation des performances et accompagnement des utilisateurs</li>
-              <li>Modélisation de base de données, gestion des migrations et maintien de la documentation technique</li>
-              <li>Code review, refactoring et déploiement via GitLab CI/CD sur Azure ainsi que sur les stores mobiles</li>
-              <li>Monitoring via ELK, APM et Sentry afin d'améliorer la disponibilité et les performances des applications</li>
-              <li>Travail en équipe Agile Scrum (Daily, Planning, Review, Rétro) et collaboration via Git, Wiki et Trello</li>
-              <li>Contribution à la mise en place et à la gestion d'un serveur MCP pour intégrer des outils et services à des modèles d'IA</li>
-            </ul>
-            <p class="resume-meta mb-2"><strong>Stack</strong></p>
-            <p>Vue.js, React Native, TypeScript, Nest.js, Node.js, Sequelize, Prisma, Docker, CI/CD, Azure</p>
-          </div>
-          <div class="resume-item">
-            <h4>Développeur Fullstack Vue.js / Node.js</h4>
-            <h5>Octobre 2025 - Mars 2026</h5>
-            <p class="resume-where"><em>Association Orient'Ex · <a href="https://orient-ex.org" target="_blank" rel="noopener noreferrer">Démo en ligne</a></em></p>
-            <ul>
-              <li>Conception et développement d'une plateforme de mise en relation mentors–mentorés</li>
-              <li>Conception d'interfaces dédiées aux administrateurs, mentors et mentorés</li>
-              <li>Mise en place de la messagerie et de notifications en temps réel avec WebSockets / Socket.IO</li>
-              <li>Gestion des authentifications, sessions et connexions avec Redis</li>
-              <li>Développement de la gestion des rendez-vous et disponibilités (ponctuelles et récurrentes)</li>
-              <li>Conteneurisation de l'application avec Docker et mise en place de pipeline CI/CD avec GitLab CI/CD</li>
-            </ul>
-            <p class="resume-meta mb-2"><strong>Stack</strong></p>
-            <p>Vue.js, Nuxt, TypeScript, Node.js, Socket.io, GitLab CI/CD, Docker, PostgreSQL, Redis</p>
-          </div>
-          <div class="resume-item">
-            <h4>Stage · technicien informatique</h4>
-            <h5>Août - septembre 2022</h5>
-            <p class="resume-where"><em>Centre Social Pasteur Sablons · Sarcelles</em></p>
-            <p>Maintenance du parc informatique et support de premier niveau (matériel et logiciel), avec accompagnement 
-des utilisateurs dans leurs usages numériques. </p>
-          </div>
-          <div class="resume-item">
-            <h4>Développeur Fullstack Java / Angular</h4>
-            <h5>Janvier 2019 - Mai 2021</h5>
-            <p class="resume-where"><em>OpenPay CG · <a href="https://openpay.cg" target="_blank" rel="noopener noreferrer">Démo en ligne</a></em></p>
-            <ul>
-              <li>Conception et développement d'une plateforme d'agrégation de paiements mobiles</li>
-              <li>Développement et intégration d'API REST, accompagnées d'une documentation technique destinée aux partenaires</li>
-              <li>Intégration de solutions de sécurité et d'authentification avec Keycloak</li>
-              <li>Conteneurisation des applications avec Docker et gestion des dépendances avec Maven</li>
-            </ul>
-            <p class="resume-meta mb-2"><strong>Stack</strong></p>
-            <p>Angular, Java, Spring Boot, Docker, Keycloak, Maven, Hibernate, MySQL</p>
-          </div>
-          
-        </div>
-        <div class="col-lg-6 order-lg-1">
-          <h3 class="resume-title mb-4">Formations</h3>
-          <div class="resume-item">
-            <h4> Master, Expert en études et développement du SI</h4>
-            <h5>2024 - 2026</h5>
-            <p class="resume-where"><em>H3&nbsp;Hitema</em></p>
-            <ul>
-              <li>Django, FastApi, Golang, Sprint Boot, Gestion de projet, ELK</li>
-              <li>DevOps(Docker, Kubernetes, Jenkins, Ansible, Terraforme, Azure)</li>
-              <li>DevSecOps (Snyk, Greenbone, ZAP Proxy, SBOM, Grype, Vault)</li>
+
+      <p class="section-lead">Développement fullstack de bout en bout - frontend, backend, mobile, infrastructure et intégration IA.</p>
+
+      <div class="skills-timeline">
+
+        <article class="skills-timeline__item">
+          <div class="skills-timeline__marker" aria-hidden="true"><i class="bi bi-window-stack"></i></div>
+          <div class="skills-timeline__content">
+            <h3 class="skills-timeline__title">Frontend</h3>
+            <ul class="skills-tags">
+              <li>HTML / CSS / Tailwind</li>
+              <li>Shadcn / PrimeVue</li>
+              <li>JavaScript / TypeScript</li>
+              <li>Angular</li>
+              <li>Vue.js / Nuxt.js</li>
+              <li>React.js</li>
             </ul>
           </div>
-          <div class="resume-item">
-            <h4>Bachelor Administrateur des SI (Web, logiciel et mobile) </h4>
-            <h5>2023 - 2024</h5>
-            <p class="resume-where"><em>H3&nbsp;Hitema</em></p>
-            <p>React Js, Node Js, Python, Flutter, Java, Docker</p>
+        </article>
+
+        <article class="skills-timeline__item">
+          <div class="skills-timeline__marker" aria-hidden="true"><i class="bi bi-phone"></i></div>
+          <div class="skills-timeline__content">
+            <h3 class="skills-timeline__title">Mobile</h3>
+            <ul class="skills-tags">
+              <li>React Native</li>
+              <li>Expo</li>
+              <li>OTA Updates</li>
+            </ul>
           </div>
-          <div class="resume-item">
-            <h4>BTS Service informatique aux organisations</h4>
-            <h5>2021 - 2023</h5>
-            <p class="resume-where"><em>H3&nbsp;Hitema</em></p>
-            <p>HTML, CSS, JavaScript, PHP, Symfony, Java, Android</p>
+        </article>
+
+        <article class="skills-timeline__item">
+          <div class="skills-timeline__marker" aria-hidden="true"><i class="bi bi-hdd-network"></i></div>
+          <div class="skills-timeline__content">
+            <h3 class="skills-timeline__title">Backend</h3>
+            <ul class="skills-tags">
+              <li>Node.js / NestJS</li>
+              <li>Golang / Gin</li>
+              <li>Spring Boot / Java</li>
+              <li>Symfony / PHP</li>
+            </ul>
           </div>
-        </div>
+        </article>
+
+        <article class="skills-timeline__item">
+          <div class="skills-timeline__marker" aria-hidden="true"><i class="bi bi-database"></i></div>
+          <div class="skills-timeline__content">
+            <h3 class="skills-timeline__title">Bases de données</h3>
+            <ul class="skills-tags">
+              <li>PostgreSQL</li>
+              <li>MySQL</li>
+              <li>MongoDB</li>
+              <li>Redis</li>
+              <li>Sequelize / Prisma</li>
+              <li>GORM / Hibernate</li>
+              <li>Mongoose</li>
+            </ul>
+          </div>
+        </article>
+
+        <article class="skills-timeline__item">
+          <div class="skills-timeline__marker" aria-hidden="true"><i class="bi bi-cloud"></i></div>
+          <div class="skills-timeline__content">
+            <h3 class="skills-timeline__title">Infrastructure & DevOps</h3>
+            <ul class="skills-tags">
+              <li>Git / GitHub</li>
+              <li>GitLab CI/CD</li>
+              <li>Docker / Nginx</li>
+              <li>Kubernetes / Helm / ArgoCD</li>
+              <li>Azure / AWS</li>
+              <li>Sentry / PostHog / ELK</li>
+              <li>WebSockets / Socket.io</li>
+              <li>Keycloak / OpenAI API</li>
+            </ul>
+          </div>
+        </article>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ======= Resume Section ======= -->
+  <section id="experience" class="resume">
+    <div class="container">
+
+      <div class="section-title">
+        <h2>Expérience</h2>
+        <p>Parcours professionnel</p>
+      </div>
+
+      <p class="section-lead">Plus de 4 ans en entreprise et en freelance, du produit au déploiement.</p>
+
+      <div class="experience-timeline">
+          <article class="resume-item">
+            <div class="resume-item__head">
+              <div>
+                <h4>Fondateur &amp; Développeur Fullstack</h4>
+                <p class="resume-where"><em>STOOGO · <a href="https://stoogo.com/" target="_blank" rel="noopener noreferrer">stoogo.com</a></em></p>
+              </div>
+              <span class="resume-period">Avril 2026 - Aujourd'hui</span>
+            </div>
+            <p class="resume-summary">Application mobile de mise en relation entre étudiants, avec back-office admin et fonctionnalités IA intégrées.</p>
+            <ul>
+              <li>Conception et développement de l'app mobile (React Native) et du back-office (Angular)</li>
+              <li>Système de matching, messagerie et notifications en temps réel (WebSockets)</li>
+              <li>IA générative : analyse de CV, lettres de motivation et candidatures automatisées (OpenAI API)</li>
+              <li>CI/CD GitLab, conteneurisation Docker, déploiements OTA iOS/Android</li>
+              <li>Observabilité : Sentry (erreurs) et PostHog (analytics produit)</li>
+            </ul>
+            <ul class="resume-stack">
+              <li>Angular</li><li>React Native</li><li>Go</li><li>WebSockets</li><li>Docker</li><li>PostgreSQL</li><li>OpenAI API</li><li>Sentry</li><li>PostHog</li>
+            </ul>
+          </article>
+
+          <article class="resume-item">
+            <div class="resume-item__head">
+              <div>
+                <h4>Développeur Fullstack Web &amp; Mobile</h4>
+                <p class="resume-where"><em>Agence TILD · Paris La Défense</em></p>
+              </div>
+              <span class="resume-period">Sept. 2022 - Juil. 2026</span>
+            </div>
+            <p class="resume-summary">Développement de la plateforme scolaire Almamater (CRM, ERP, extranet, app mobile) au sein d'une équipe Agile Scrum.</p>
+
+            <ul>
+              <li>Modules CRM, ERP, extranet et application mobile pour établissements scolaires</li>
+              <li>Ancrage blockchain de diplômes et documents pour garantir leur authenticité</li>
+              <li>Modélisation BDD, migrations, documentation technique et code review</li>
+              <li>Déploiements GitLab CI/CD sur Azure et publication sur les stores mobiles</li>
+              <li>Monitoring ELK, APM et Sentry · serveur MCP pour intégration d'outils IA</li>
+            </ul>
+            <ul class="resume-stack">
+              <li>Vue.js</li><li>React Native</li><li>TypeScript</li><li>Nest.js</li><li>Node.js</li><li>Prisma</li><li>Docker</li><li>Azure</li><li>GitLab CI/CD</li>
+            </ul>
+          </article>
+
+          <article class="resume-item">
+            <div class="resume-item__head">
+              <div>
+                <h4>Développeur Fullstack Vue.js / Nuxt / Node.js</h4>
+                <p class="resume-where"><em>Association Orient'Ex · <a href="https://orient-ex.org" target="_blank" rel="noopener noreferrer">orient-ex.org</a></em></p>
+              </div>
+              <span class="resume-period">Oct. 2025 - Mars 2026</span>
+            </div>
+            <p class="resume-summary">Plateforme de mentorat connectant mentors et jeunes, avec interfaces dédiées par rôle et prise de rendez-vous.</p>
+
+            <ul>
+              <li>Interfaces admin, mentor et mentoré · messagerie temps réel (Socket.IO)</li>
+              <li>Gestion des rendez-vous ponctuels et récurrents</li>
+              <li>Authentification, sessions Redis · pipeline CI/CD GitLab et Docker</li>
+            </ul>
+            <ul class="resume-stack">
+              <li>Vue.js</li><li>Nuxt</li><li>TypeScript</li><li>Node.js</li><li>Socket.io</li><li>PostgreSQL</li><li>Redis</li><li>Docker</li>
+            </ul>
+          </article>
+
+          <article class="resume-item">
+            <div class="resume-item__head">
+              <div>
+                <h4>Développeur Fullstack Java / Angular</h4>
+                <p class="resume-where"><em>OpenPay CG · <a href="https://openpay.cg" target="_blank" rel="noopener noreferrer">openpay.cg</a></em></p>
+              </div>
+              <span class="resume-period">Janv. 2019 - Mai 2021</span>
+            </div>
+            <p class="resume-summary">Plateforme FinTech d'agrégation de paiements mobiles via opérateurs téléphoniques en Afrique centrale.</p>
+
+            <ul>
+              <li>API REST documentées pour partenaires · espaces client, partenaire et admin</li>
+              <li>Authentification et sécurité avec Keycloak · conteneurisation Docker</li>
+            </ul>
+            <ul class="resume-stack">
+              <li>Angular</li><li>Java</li><li>Spring Boot</li><li>Keycloak</li><li>Docker</li><li>MySQL</li><li>Hibernate</li>
+            </ul>
+          </article>
+
+          <article class="resume-item">
+            <div class="resume-item__head">
+              <div>
+                <h4>Stage · Technicien informatique</h4>
+                <p class="resume-where"><em>Centre Social Pasteur Sablons · Sarcelles</em></p>
+              </div>
+              <span class="resume-period">Août - Sept. 2022</span>
+            </div>
+            <p class="resume-summary">Maintenance du parc informatique, support utilisateurs et accompagnement aux usages numériques.</p>
+          </article>
       </div>
     </div>
   </section><!-- End Resume Section -->
+
+  <!-- ======= Portfolio Section ======= -->
+  <section id="projets" class="portfolio">
+    <div class="container">
+
+      <div class="section-title">
+        <h2>Projets</h2>
+        <p>Réalisations</p>
+      </div>
+
+      <ul id="portfolio-flters" class="portfolio-filters">
+            <li data-filter="*" class="filter-active">Tout</li>
+            <li data-filter=".filter-web">Web</li>
+            <li data-filter=".filter-mobile">Mobile</li>
+            <li data-filter=".filter-api">API</li>
+          </ul>
+
+      <div class="portfolio-container">
+
+        <!-- STOOGO -->
+        <article class="project-showcase portfolio-item filter-web filter-mobile">
+          <div class="project-showcase__inner">
+            <header class="project-showcase__header">
+              <div class="project-showcase__badges">
+                <span class="project-showcase__badge">Mobile</span>
+                <span class="project-showcase__badge">Web</span>
+                <span class="project-showcase__badge project-showcase__badge--accent">Projet fondateur</span>
+              </div>
+              <h3>STOOGO</h3>
+              <p class="project-showcase__pitch">App mobile de mise en relation entre étudiants, avec back-office et IA intégrée</p>
+            </header>
+            <div class="row g-4 align-items-start">
+              <div class="col-lg-5">
+                <div class="project-showcase__body">
+                  <h4>Points clés</h4>
+                  <ul>
+                    <li>Application mobile React Native (matching, profils, messagerie temps réel)</li>
+                    <li>Back-office Angular pour l'administration et la modération</li>
+                    <li>Fonctionnalités IA : analyse de CV, génération de lettres de motivation, candidatures automatisées</li>
+                    <li>Backend Go, WebSockets, CI/CD GitLab, déploiements OTA iOS/Android</li>
+                    <li>Monitoring Sentry et analytics PostHog</li>
+                  </ul>
+                  <h4>Stack</h4>
+                  <ul class="portfolio-stack">
+                    <li>React Native</li><li>Angular</li><li>Golang</li><li>PostgreSQL</li><li>Docker</li><li>OpenAI API</li><li>Sentry</li><li>PostHog</li>
+                  </ul>
+                  <div class="project-showcase__actions">
+                    <a href="https://stoogo.com/" class="project-showcase__link" target="_blank" rel="noopener noreferrer"><i class="bx bx-link-external"></i> Voir stoogo.com</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-7">
+                <div class="project-showcase__gallery project-showcase__gallery--solo">
+                  <a href="assets/img/projects/stoogo.png" data-gallery="portfolioGallery" class="portfolio-lightbox" title="STOOGO - Application mobile">
+                    <img src="assets/img/projects/stoogo.png" class="img-fluid" loading="lazy" decoding="async" alt="STOOGO - Application mobile">
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </article>
+ <!-- Almamater -->
+        <article class="project-showcase portfolio-item filter-web project-showcase--reverse">
+          <div class="project-showcase__inner">
+            <header class="project-showcase__header">
+              <div class="project-showcase__badges">
+                <span class="project-showcase__badge">Web</span>
+                <span class="project-showcase__badge">Mobile</span>
+                <span class="project-showcase__badge">EdTech</span>
+              </div>
+              <h3>Almamater</h3>
+              <p class="project-showcase__pitch">Suite de gestion scolaire : CRM, ERP, extranet étudiants et application mobile</p>
+            </header>
+            <div class="row g-4 align-items-start">
+              <div class="col-lg-7">
+                <div class="project-showcase__gallery project-showcase__gallery--triple">
+                  <a href="assets/img/projects/alma1.jpeg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Almamater - CRM">
+                    <img src="assets/img/projects/alma1.jpeg" class="img-fluid" loading="lazy" decoding="async" alt="Almamater - CRM">
+                  </a>
+                  <a href="assets/img/projects/pedaalma.png" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Almamater - Interface pédagogique">
+                    <img src="assets/img/projects/pedaalma.png" class="img-fluid" loading="lazy" decoding="async" alt="Almamater - Interface pédagogique">
+                  </a>
+                  <a href="assets/img/projects/extrantetalma.png" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Almamater - Extranet">
+                    <img src="assets/img/projects/extrantetalma.png" class="img-fluid" loading="lazy" decoding="async" alt="Almamater - Extranet">
+                  </a>
+                </div>
+              </div>
+              <div class="col-lg-5">
+                <div class="project-showcase__body">
+                  <h4>Points clés</h4>
+                  <ul>
+                    <li>Modules CRM et ERP pour la gestion interne des établissements</li>
+                    <li>Extranet Étudiants / Application mobile : notes, emplois du temps, documents</li>
+                    <li>Ancrage blockchain de diplômes pour garantir l'authenticité</li>
+                    <li>Déploiements Azure et GitLab CI/CD</li>
+                  </ul>
+                  <h4>Stack</h4>
+                  <ul class="portfolio-stack">
+                    <li>Vue.js</li><li>React Native</li><li>Nest.js</li><li>Node.js</li><li>Prisma</li><li>MySQL</li><li>Docker</li><li>Azure</li><li>GitLab CI/CD</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </article>
+        <!-- Orient-Ex -->
+        <article class="project-showcase portfolio-item filter-web project-showcase--reverse">
+          <div class="project-showcase__inner">
+            <header class="project-showcase__header">
+              <div class="project-showcase__badges">
+                <span class="project-showcase__badge">Web</span>
+                <span class="project-showcase__badge">Temps réel</span>
+              </div>
+              <h3>Orient'Ex</h3>
+              <p class="project-showcase__pitch">Plateforme de mentorat connectant mentors bénévoles et jeunes en recherche d'orientation</p>
+            </header>
+            <div class="row g-4 align-items-start">
+              <div class="col-lg-7">
+                <div class="project-showcase__gallery">
+                  <a href="assets/img/projects/orientex1.png" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Orient'Ex - Espace mentor">
+                    <img src="assets/img/projects/orientex1.png" class="img-fluid" loading="lazy" decoding="async" alt="Orient'Ex - Espace mentor">
+                  </a>
+                  <a href="assets/img/projects/orientex2.png" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Orient'Ex - Administration">
+                    <img src="assets/img/projects/orientex2.png" class="img-fluid" loading="lazy" decoding="async" alt="Orient'Ex - Administration">
+                  </a>
+                </div>
+              </div>
+              <div class="col-lg-5">
+                <div class="project-showcase__body">
+                  <h4>Points clés</h4>
+                  <ul>
+                    <li>3 interfaces distinctes : admin, mentor et mentoré</li>
+                    <li>Messagerie et notifications en temps réel (Socket.IO)</li>
+                    <li>Prise de rendez-vous ponctuels et récurrents</li>
+                    <li>Authentification, sessions Redis, pipeline CI/CD GitLab</li>
+                  </ul>
+                  <h4>Stack</h4>
+                  <ul class="portfolio-stack">
+                    <li>Vue.js</li><li>Nuxt</li><li>Node.js</li><li>Socket.io</li><li>PostgreSQL</li><li>Redis</li><li>Docker</li><li>GitLab CI/CD</li>
+                  </ul>
+                  <div class="project-showcase__actions">
+                    <a href="https://orient-ex.org" class="project-showcase__link" target="_blank" rel="noopener noreferrer"><i class="bx bx-link-external"></i> Voir orient-ex.org</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- OpenPay -->
+        <article class="project-showcase portfolio-item filter-web">
+          <div class="project-showcase__inner">
+            <header class="project-showcase__header">
+              <div class="project-showcase__badges">
+                <span class="project-showcase__badge">Web</span>
+                <span class="project-showcase__badge">FinTech</span>
+              </div>
+              <h3>OpenPay</h3>
+              <p class="project-showcase__pitch">Agrégateur de paiements mobiles pour particuliers, commerçants et partenaires en Afrique centrale</p>
+            </header>
+            <div class="row g-4 align-items-start">
+              <div class="col-lg-5">
+                <div class="project-showcase__body">
+                  <h4>Points clés</h4>
+                  <ul>
+                    <li>Portail client, espace partenaire et console admin</li>
+                    <li>API REST documentées pour l'intégration des partenaires</li>
+                    <li>Authentification par clé API</li>
+                    <li>Transactions en temps réel avec Callbacks url</li>
+                    <li>Déploiement Docker/Nginx, CI/CD GitLab</li>
+                  </ul>
+                  <h4>Stack</h4>
+                  <ul class="portfolio-stack">
+                    <li>Vue.js</li><li>Nuxt</li><li>PrimeVue</li><li>Java</li><li>Spring Boot</li><li>Keycloak</li><li>MySQL</li><li>Docker</li><li>WebSocket</li>
+                  </ul>
+                  <div class="project-showcase__actions">
+                    <a href="https://openpay.cg" class="project-showcase__link" target="_blank" rel="noopener noreferrer"><i class="bx bx-link-external"></i> Voir openpay.cg</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-7">
+                <div class="project-showcase__gallery project-showcase__gallery--triple">
+                  <a href="assets/img/projects/openpay1.png" data-gallery="portfolioGallery" class="portfolio-lightbox" title="OpenPay - Portail client">
+                    <img src="assets/img/projects/openpay1.png" class="img-fluid" loading="lazy" decoding="async" alt="OpenPay - Portail client">
+                  </a>
+                  <a href="assets/img/projects/openpay2.png" data-gallery="portfolioGallery" class="portfolio-lightbox" title="OpenPay - Espace partenaire">
+                    <img src="assets/img/projects/openpay2.png" class="img-fluid" loading="lazy" decoding="async" alt="OpenPay - Espace partenaire">
+                  </a>
+                  <a href="assets/img/projects/openpay3.png" data-gallery="portfolioGallery" class="portfolio-lightbox" title="OpenPay - Console admin">
+                    <img src="assets/img/projects/openpay3.png" class="img-fluid" loading="lazy" decoding="async" alt="OpenPay - Console admin">
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </article>
+
+       
+
+        <!-- Open Banking -->
+        <article class="project-showcase portfolio-item filter-mobile">
+          <div class="project-showcase__inner">
+            <header class="project-showcase__header">
+              <div class="project-showcase__badges">
+                <span class="project-showcase__badge">Mobile</span>
+                <span class="project-showcase__badge">FinTech</span>
+              </div>
+              <h3>App bancaire agrégatrice</h3>
+              <p class="project-showcase__pitch">Centralisation de comptes bancaires via Open Banking avec gestion financière intégrée</p>
+            </header>
+            <div class="row g-4 align-items-start">
+              <div class="col-lg-5">
+                <div class="project-showcase__body">
+                  <h4>Points clés</h4>
+                  <ul>
+                    <li>Connexion multi-banques via API Open Banking (TrueLayer)</li>
+                    <li>Consultation de comptes, virements et cartes virtuelles</li>
+                    <li>Authentification sécurisée Keycloak · paiements Stripe</li>
+                    <li>Backend Spring Boot conteneurisé avec Docker</li>
+                  </ul>
+                  <h4>Stack</h4>
+                  <ul class="portfolio-stack">
+                    <li>React Native</li><li>Expo</li><li>Java</li><li>Spring Boot</li><li>PostgreSQL</li><li>Keycloak</li><li>TrueLayer</li><li>Stripe</li><li>Docker</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col-lg-7">
+                <div class="project-showcase__gallery project-showcase__gallery--triple">
+                  <a href="assets/img/projects/hb1.png" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Open Banking - Accueil">
+                    <img src="assets/img/projects/hb1.png" class="img-fluid" loading="lazy" decoding="async" alt="Open Banking - Accueil">
+                  </a>
+                  <a href="assets/img/projects/hb2.png" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Open Banking - Comptes">
+                    <img src="assets/img/projects/hb2.png" class="img-fluid" loading="lazy" decoding="async" alt="Open Banking - Comptes">
+                  </a>
+                  <a href="assets/img/projects/hb3.png" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Open Banking - Virements">
+                    <img src="assets/img/projects/hb3.png" class="img-fluid" loading="lazy" decoding="async" alt="Open Banking - Virements">
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- Loukka -->
+        <article class="project-showcase portfolio-item filter-mobile project-showcase--reverse">
+          <div class="project-showcase__inner">
+            <header class="project-showcase__header">
+              <div class="project-showcase__badges">
+                <span class="project-showcase__badge">Mobile</span>
+                <span class="project-showcase__badge">Géolocalisation</span>
+              </div>
+              <h3>Loukka</h3>
+              <p class="project-showcase__pitch">Découverte d'établissements locaux difficilement repérables sur une carte interactive</p>
+            </header>
+            <div class="row g-4 align-items-start">
+              <div class="col-lg-7">
+                <div class="project-showcase__gallery project-showcase__gallery--triple">
+                  <a href="assets/img/projects/loukka1.jpeg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Loukka - Découverte">
+                    <img src="assets/img/projects/loukka1.jpeg" class="img-fluid" loading="lazy" decoding="async" alt="Loukka - Découverte">
+                  </a>
+                  <a href="assets/img/projects/loukka2.jpeg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Loukka - Carte">
+                    <img src="assets/img/projects/loukka2.jpeg" class="img-fluid" loading="lazy" decoding="async" alt="Loukka - Carte">
+                  </a>
+                  <a href="assets/img/projects/loukka4.jpeg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Loukka - Fiche établissement">
+                    <img src="assets/img/projects/loukka4.jpeg" class="img-fluid" loading="lazy" decoding="async" alt="Loukka - Fiche établissement">
+                  </a>
+                </div>
+              </div>
+              <div class="col-lg-5">
+                <div class="project-showcase__body">
+                  <h4>Points clés</h4>
+                  <ul>
+                    <li>Carte interactive et recherche géolocalisée (Maps API)</li>
+                    <li>Fiches établissements avec photos et informations pratiques</li>
+                    <li>API REST Node.js avec PostgreSQL, backend Dockerisé</li>
+                  </ul>
+                  <h4>Stack</h4>
+                  <ul class="portfolio-stack">
+                    <li>React Native</li><li>Expo</li><li>Maps API</li><li>Node.js</li><li>Sequelize</li><li>PostgreSQL</li><li>Docker</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- Airnes -->
+        <article class="project-showcase portfolio-item filter-web">
+          <div class="project-showcase__inner">
+            <header class="project-showcase__header">
+              <div class="project-showcase__badges">
+                <span class="project-showcase__badge">Web</span>
+                <span class="project-showcase__badge">E-commerce</span>
+              </div>
+              <h3>Airnes</h3>
+              <p class="project-showcase__pitch">Boutique en ligne complète avec front-office client et back-office admin</p>
+            </header>
+            <div class="row g-4 align-items-start">
+              <div class="col-lg-5">
+                <div class="project-showcase__body">
+                  <h4>Points clés</h4>
+                  <ul>
+                    <li>Front-office : catalogue, panier et parcours d'achat complet</li>
+                    <li>Back-office : stocks, commandes, suivi des ventes</li>
+                    <li>Intégration paiement Stripe · API Node.js et MongoDB</li>
+                  </ul>
+                  <h4>Stack</h4>
+                  <ul class="portfolio-stack">
+                    <li>React</li><li>Tailwind</li><li>Node.js</li><li>MongoDB</li><li>Stripe</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col-lg-7">
+                <div class="project-showcase__gallery">
+                  <a href="assets/img/projects/airnes1.png" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Airnes - Interface client">
+                    <img src="assets/img/projects/airnes1.png" class="img-fluid" loading="lazy" decoding="async" alt="Airnes - Interface client">
+                  </a>
+                  <a href="assets/img/projects/airnes2.png" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Airnes - Interface admin">
+                    <img src="assets/img/projects/airnes2.png" class="img-fluid" loading="lazy" decoding="async" alt="Airnes - Interface admin">
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- Gestache -->
+        <article class="project-showcase portfolio-item filter-web project-showcase--reverse">
+          <div class="project-showcase__inner">
+            <header class="project-showcase__header">
+              <div class="project-showcase__badges">
+                <span class="project-showcase__badge">Web</span>
+                <span class="project-showcase__badge">Productivité</span>
+              </div>
+              <h3>Gestache</h3>
+              <p class="project-showcase__pitch">Gestionnaire de tâches avec minuteur intégré pour suivre son temps de travail</p>
+            </header>
+            <div class="row g-4 align-items-start">
+              <div class="col-lg-7">
+                <div class="project-showcase__gallery project-showcase__gallery--solo">
+                  <a href="assets/img/projects/gestache.png" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Gestache">
+                    <img src="assets/img/projects/gestache.png" class="img-fluid" loading="lazy" decoding="async" alt="Gestache - Gestion de tâches">
+                  </a>
+                </div>
+              </div>
+              <div class="col-lg-5">
+                <div class="project-showcase__body">
+                  <h4>Points clés</h4>
+                  <ul>
+                    <li>CRUD de tâches avec catégories et statuts</li>
+                    <li>Minuteur par tâche avec suivi du temps cumulé</li>
+                    <li>Authentification Firebase · déploiement Netlify</li>
+                  </ul>
+                  <h4>Stack</h4>
+                  <ul class="portfolio-stack">
+                    <li>Vue.js</li><li>Vuetify</li><li>Firebase</li><li>Netlify</li>
+                  </ul>
+                  <div class="project-showcase__actions">
+                    <a href="https://gestache-tsiang.netlify.app/" class="project-showcase__link" target="_blank" rel="noopener noreferrer"><i class="bx bx-link-external"></i> Voir la démo</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- API RDV -->
+        <article class="project-showcase portfolio-item filter-api">
+          <div class="project-showcase__inner">
+            <header class="project-showcase__header">
+              <div class="project-showcase__badges">
+                <span class="project-showcase__badge">API</span>
+                <span class="project-showcase__badge">Documentation</span>
+              </div>
+              <h3>API Prise de rendez-vous</h3>
+              <p class="project-showcase__pitch">API REST documentée Swagger pour une application mobile de prise de rendez-vous</p>
+            </header>
+            <div class="row g-4 align-items-start">
+              <div class="col-lg-5">
+                <div class="project-showcase__body">
+                  <h4>Points clés</h4>
+                  <ul>
+                    <li>Endpoints CRUD pour rendez-vous, utilisateurs et créneaux</li>
+                    <li>Documentation Swagger complète et testable en ligne</li>
+                    <li>ORM Sequelize avec base MySQL</li>
+                  </ul>
+                  <h4>Stack</h4>
+                  <ul class="portfolio-stack">
+                    <li>Node.js</li><li>Sequelize</li><li>MySQL</li><li>Swagger</li><li>REST API</li>
+                  </ul>
+                  <div class="project-showcase__actions">
+                    <a href="https://androidapi.herokuapp.com/api/v1/api-docs/" class="project-showcase__link" target="_blank" rel="noopener noreferrer"><i class="bx bx-link-external"></i> Voir la documentation</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-7">
+                <div class="project-showcase__gallery project-showcase__gallery--solo">
+                  <a href="assets/img/projects/api-docs.png" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Documentation API Swagger">
+                    <img src="assets/img/projects/api-docs.png" class="img-fluid" loading="lazy" decoding="async" alt="Documentation API Swagger">
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- API Tennis -->
+        <article class="project-showcase portfolio-item filter-api project-showcase--reverse">
+          <div class="project-showcase__inner">
+            <header class="project-showcase__header">
+              <div class="project-showcase__badges">
+                <span class="project-showcase__badge">API</span>
+                <span class="project-showcase__badge">Java</span>
+              </div>
+              <h3>API REST - Gestion sportive</h3>
+              <p class="project-showcase__pitch">API Spring Boot documentée pour la gestion de tournois et de matchs</p>
+            </header>
+            <div class="row g-4 align-items-start">
+              <div class="col-lg-7">
+                <div class="project-showcase__gallery project-showcase__gallery--solo">
+                  <a href="assets/img/projects/api-tennis.png" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Documentation API Spring Boot">
+                    <img src="assets/img/projects/api-tennis.png" class="img-fluid" loading="lazy" decoding="async" alt="Documentation API Spring Boot">
+                  </a>
+                </div>
+              </div>
+              <div class="col-lg-5">
+                <div class="project-showcase__body">
+                  <h4>Points clés</h4>
+                  <ul>
+                    <li>Architecture Spring Boot avec couche service et repository</li>
+                    <li>Documentation Swagger/OpenAPI intégrée</li>
+                    <li>Conteneurisation Docker pour le déploiement</li>
+                  </ul>
+                  <h4>Stack</h4>
+                  <ul class="portfolio-stack">
+                    <li>Java</li><li>Spring Boot</li><li>Docker</li><li>Swagger</li><li>REST API</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- H3 Freelance -->
+        <article class="project-showcase portfolio-item filter-web">
+          <div class="project-showcase__inner">
+            <header class="project-showcase__header">
+              <div class="project-showcase__badges">
+                <span class="project-showcase__badge">Web</span>
+              </div>
+              <h3>Site freelance H3</h3>
+              <p class="project-showcase__pitch">Plateforme de mise en vente de services freelance pour étudiants</p>
+            </header>
+            <div class="row g-4 align-items-start">
+              <div class="col-lg-5">
+                <div class="project-showcase__body">
+                  <h4>Points clés</h4>
+                  <ul>
+                    <li>Catalogue de services avec fiches détaillées</li>
+                    <li>Backend Symfony avec gestion des utilisateurs et commandes</li>
+                  </ul>
+                  <h4>Stack</h4>
+                  <ul class="portfolio-stack">
+                    <li>HTML</li><li>CSS</li><li>JavaScript</li><li>PHP</li><li>Symfony</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col-lg-7">
+                <div class="project-showcase__gallery project-showcase__gallery--solo">
+                  <a href="assets/img/projects/h3freelance.png" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Site freelance H3">
+                    <img src="assets/img/projects/h3freelance.png" class="img-fluid" loading="lazy" decoding="async" alt="Site freelance H3">
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section><!-- End Portfolio Section -->
 
   <!-- ======= Certificats Section ======= -->
   <section id="certificats" class="portfolio Certificats-section">
     <div class="container">
 
       <div class="section-title">
-        <h2>Certificats</h2>
-        <p>Formations reconnues</p>
+        <h2>Certifications</h2>
+        <p>Formations certifiantes</p>
       </div>
 
       <div class="row certifications-grid">
         <div class="col-lg-4 col-md-6 portfolio-item">
           <div class="portfolio-wrap">
-            <img src="assets/img/certificats/vuecertif.png" class="img-fluid" alt="Certification Vue.js 3">
+            <img src="assets/img/certificats/vuecertif.png" class="img-fluid" loading="lazy" decoding="async" alt="Certification Vue.js 3">
             <div class="portfolio-info">
               <h4>Certification Vue.js 3</h4>
               <div class="portfolio-links">
@@ -396,7 +772,7 @@ des utilisateurs dans leurs usages numériques. </p>
         </div>
         <div class="col-lg-4 col-md-6 portfolio-item">
           <div class="portfolio-wrap">
-            <img src="assets/img/certificats/reactcertif.png" class="img-fluid" alt="Certification React">
+            <img src="assets/img/certificats/reactcertif.png" class="img-fluid" loading="lazy" decoding="async" alt="Certification React">
             <div class="portfolio-info">
               <h4>Certification React</h4>
               <div class="portfolio-links">
@@ -408,7 +784,7 @@ des utilisateurs dans leurs usages numériques. </p>
         </div>
         <div class="col-lg-4 col-md-6 portfolio-item">
           <div class="portfolio-wrap">
-            <img src="assets/img/certificats/nodecertif.png" class="img-fluid" alt="Certification Node.js">
+            <img src="assets/img/certificats/nodecertif.png" class="img-fluid" loading="lazy" decoding="async" alt="Certification Node.js">
             <div class="portfolio-info">
               <h4>Certification Node.js</h4>
               <div class="portfolio-links">
@@ -420,7 +796,7 @@ des utilisateurs dans leurs usages numériques. </p>
         </div>
         <div class="col-lg-4 col-md-6 portfolio-item">
           <div class="portfolio-wrap">
-            <img src="assets/img/certificats/gitlabcertif.png" class="img-fluid" alt="Certification GitLab CI/CD">
+            <img src="assets/img/certificats/gitlabcertif.png" class="img-fluid" loading="lazy" decoding="async" alt="Certification GitLab CI/CD">
             <div class="portfolio-info">
               <h4>Certification GitLab CI/CD</h4>
               <div class="portfolio-links">
@@ -432,7 +808,7 @@ des utilisateurs dans leurs usages numériques. </p>
         </div>
         <div class="col-lg-4 col-md-6 portfolio-item">
           <div class="portfolio-wrap">
-            <img src="assets/img/certificats/reactnativecertif.png" class="img-fluid" alt="Certification React Native">
+            <img src="assets/img/certificats/reactnativecertif.png" class="img-fluid" loading="lazy" decoding="async" alt="Certification React Native">
             <div class="portfolio-info">
               <h4>Certification React Native</h4>
               <div class="portfolio-links">
@@ -444,7 +820,7 @@ des utilisateurs dans leurs usages numériques. </p>
         </div>
         <div class="col-lg-4 col-md-6 portfolio-item">
           <div class="portfolio-wrap">
-            <img src="assets/img/certificats/gocertif.png" class="img-fluid" alt="Certification Golang">
+            <img src="assets/img/certificats/gocertif.png" class="img-fluid" loading="lazy" decoding="async" alt="Certification Golang">
             <div class="portfolio-info">
               <h4>Certification Golang</h4>
               <div class="portfolio-links">
@@ -456,7 +832,7 @@ des utilisateurs dans leurs usages numériques. </p>
         </div>
         <div class="col-lg-4 col-md-6 portfolio-item">
           <div class="portfolio-wrap">
-            <img src="assets/img/certificats/k8s.png" class="img-fluid" alt="Certification Kubernetes">
+            <img src="assets/img/certificats/k8s.png" class="img-fluid" loading="lazy" decoding="async" alt="Certification Kubernetes">
             <div class="portfolio-info">
               <h4>Kubernetes</h4>
               <div class="portfolio-links">
@@ -468,7 +844,7 @@ des utilisateurs dans leurs usages numériques. </p>
         </div>
         <div class="col-lg-4 col-md-6 portfolio-item">
           <div class="portfolio-wrap">
-            <img src="assets/img/certificats/springboot.png" class="img-fluid" alt="Certification Java / Spring Boot">
+            <img src="assets/img/certificats/springboot.png" class="img-fluid" loading="lazy" decoding="async" alt="Certification Java / Spring Boot">
             <div class="portfolio-info">
               <h4>Java / Spring Boot </h4>
               <div class="portfolio-links">
@@ -482,588 +858,10 @@ des utilisateurs dans leurs usages numériques. </p>
     </div>
   </section><!-- End Certificats Section -->
 
-  <!-- ======= Portfolio Section ======= -->
-  <section id="projets" class="portfolio">
-    <div class="container">
-
-      <div class="section-title">
-        <h2>Projets</h2>
-        <!-- <p>Documents</p> -->
-      </div>
-
-      <div class="row">
-        <div class="col-lg-12 d-flex justify-content-center">
-          <ul id="portfolio-flters">
-            <li data-filter="*" class="filter-active">Tout</li>
-            <li data-filter=".filter-web">Web</li>
-            <li data-filter=".filter-mobile">Mobile</li>
-          </ul>
-        </div>
-      </div>
-
-      <div class="row portfolio-container">
-        <div class="col-lg-4 col-md-6 portfolio-item filter-web">
-          <div class="portfolio-card">
-            <div class="portfolio-wrap">
-              <img src="assets/img/projects/gestache.png" class="img-fluid" alt="Application de gestion de tâches Gestache">
-              <div class="portfolio-info">
-                <div class="portfolio-links">
-                  <a href="assets/img/projects/gestache.png" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Aperçu - Gestache"><i class="bx bx-search-alt"></i></a>
-                  <a href="https://gestache-tsiang.netlify.app/" target="_blank" rel="noopener noreferrer" title="Ouvrir le projet"><i class="bx bx-link-external"></i></a>
-                </div>
-              </div>
-            </div>
-            <div class="portfolio-content">
-              <h4>Gestache</h4>
-              <p class="portfolio-desc">Application web de gestion de tâches avec système de minuteur par tâche.</p>
-              <ul class="portfolio-stack">
-                <li>Vue.js</li>
-                <li>Vuetify</li>
-                <li>Vercel</li>
-                <li>Firebase</li>
-              </ul>
-            </div>
-          </div>
-        </div>
-        
-        <!-- <div class="col-lg-4 col-md-6 portfolio-item filter-web">
-          <div class="portfolio-card">
-            <div class="portfolio-wrap">
-              <img src="assets/img/projects/pedaalma.png" class="img-fluid" alt="Interface pédagogique Almamater">
-              <div class="portfolio-info">
-                <div class="portfolio-links">
-                  <a href="assets/img/projects/pedaalma.png" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Aperçu - Interface pédagogique"><i class="bx bx-search-alt"></i></a>
-                  <span class="portfolio-link-placeholder" title="Pas de démo en ligne"><i class="bx bx-link-external"></i></span>
-                </div>
-              </div>
-            </div>
-            <div class="portfolio-content">
-              <h4>Interface pédagogique Almamater</h4>
-              <p class="portfolio-desc">Module de gestion scolaire pour le suivi des cours, évaluations et parcours élèves.</p>
-              <ul class="portfolio-stack">
-                <li>Vue.js</li>
-                <li>Node.js</li>
-                <li>Sequelize</li>
-                <li>MySQL</li>
-                <li>Docker</li>
-                <li>Gitlab CI/CD</li>
-                <li>Azure</li>
-              </ul>
-            </div>
-          </div>
-        </div> -->
-        <!-- <div class="col-lg-4 col-md-6 portfolio-item filter-web">
-          <div class="portfolio-card">
-            <div class="portfolio-wrap">
-              <img src="assets/img/projects/extrantetalma.png" class="img-fluid" alt="Extranet Almamater">
-              <div class="portfolio-info">
-                <div class="portfolio-links">
-                  <a href="assets/img/projects/extrantetalma.png" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Aperçu - Extranet"><i class="bx bx-search-alt"></i></a>
-                  <span class="portfolio-link-placeholder" title="Pas de démo en ligne"><i class="bx bx-link-external"></i></span>
-                </div>
-              </div>
-            </div>
-            <div class="portfolio-content">
-              <h4>Extranet Almamater</h4>
-              <p class="portfolio-desc">Portail extranet dédié aux parents et élèves pour consulter informations et documents.</p>
-              <ul class="portfolio-stack">
-                <li>Vue.js</li>
-                <li>Node.js</li>
-                <li>Sequelize</li>
-                <li>MySQL</li>
-                <li>Docker</li>
-                <li>Gitlab CI/CD</li>
-                <li>Azure</li>
-              </ul>
-            </div>
-          </div>
-        </div> -->
-        <div class="col-lg-4 col-md-6 portfolio-item filter-web">
-          <div class="portfolio-card">
-            <div class="portfolio-wrap">
-              <img src="assets/img/projects/h3freelance.png" class="img-fluid" alt="Site freelance H3">
-              <div class="portfolio-info">
-                <div class="portfolio-links">
-                  <a href="assets/img/projects/h3freelance.png" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Aperçu - Site freelance"><i class="bx bx-search-alt"></i></a>
-                  <span class="portfolio-link-placeholder" title="Pas de démo en ligne"><i class="bx bx-link-external"></i></span>
-                </div>
-              </div>
-            </div>
-            <div class="portfolio-content">
-              <h4>Site freelance H3</h4>
-              <p class="portfolio-desc">Application de ventes de services freelance.</p>
-              <ul class="portfolio-stack">
-                <li>HTML</li>
-                <li>CSS</li>
-                <li>JavaScript</li>
-                <li>PHP/Symfony</li>
-              </ul>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-4 col-md-6 portfolio-item filter-web">
-          <div class="portfolio-card">
-            <div class="portfolio-wrap">
-              <img src="assets/img/projects/api-docs.png" class="img-fluid" alt="Documentation API prise de rendez-vous">
-              <div class="portfolio-info">
-                <div class="portfolio-links">
-                  <a href="assets/img/projects/api-docs.png" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Aperçu - Documentation API"><i class="bx bx-search-alt"></i></a>
-                  <a href="https://androidapi.herokuapp.com/api/v1/api-docs/" target="_blank" rel="noopener noreferrer" title="Ouvrir la documentation"><i class="bx bx-link-external"></i></a>
-                </div>
-              </div>
-            </div>
-            <div class="portfolio-content">
-              <h4>Documentation API - Prise de rendez-vous</h4>
-              <p class="portfolio-desc">Documentation Swagger d'une API REST pour une application mobile de prise de rendez-vous.</p>
-              <ul class="portfolio-stack">
-                <li>Node.js</li>
-                <li>Sequelize</li>
-                <li>Mysql</li>
-                <li>Swagger</li>
-                <li>REST API</li>
-              </ul>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-4 col-md-6 portfolio-item filter-web">
-          <div class="portfolio-card">
-            <div class="portfolio-wrap">
-              <img src="assets/img/projects/api-tennis.png" class="img-fluid" alt="Documentation API REST">
-              <div class="portfolio-info">
-                <div class="portfolio-links">
-                  <a href="assets/img/projects/api-tennis.png" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Aperçu - Documentation API"><i class="bx bx-search-alt"></i></a>
-                  <a href="" target="_blank" rel="noopener noreferrer" title="Ouvrir la documentation"><i class="bx bx-link-external"></i></a>
-                </div>
-              </div>
-            </div>
-            <div class="portfolio-content">
-              <h4>Documentation API REST</h4>
-              <p class="portfolio-desc">Documentation Swagger d'une API REST.</p>
-              <ul class="portfolio-stack">
-                <li>Java</li>
-                <li>Spring Boot</li>
-                <li>Docker</li>
-                <li>Swagger</li>
-                <li>REST API</li>
-              </ul>
-            </div>
-          </div>
-        </div>
-        
-        <div class="col-lg-4 col-md-6 portfolio-item filter-web">
-          <div class="portfolio-card">
-            <div class="portfolio-wrap">
-              <img src="assets/img/projects/airnes1.png" class="img-fluid" alt="Airnes - Interface client">
-              <div class="portfolio-info">
-                <div class="portfolio-links">
-                  <a href="assets/img/projects/airnes1.png" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Aperçu - Airnes client"><i class="bx bx-search-alt"></i></a>
-                  <span class="portfolio-link-placeholder" title="Pas de démo en ligne"><i class="bx bx-link-external"></i></span>
-                </div>
-              </div>
-            </div>
-            <div class="portfolio-content">
-              <h4>Airnes - Interface client</h4>
-              <p class="portfolio-desc">Front-office e-commerce avec catalogue produits, panier et parcours d'achat complet.</p>
-              <ul class="portfolio-stack">
-                <li>React</li>
-                <li>Tailwind</li>
-                <li>Node.js</li>
-                <li>MongoDB/Mongoose</li>
-                <li>Stripe</li>
-              </ul>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-4 col-md-6 portfolio-item filter-web">
-          <div class="portfolio-card">
-            <div class="portfolio-wrap">
-              <img src="assets/img/projects/airnes2.png" class="img-fluid" alt="Airnes - Interface admin">
-              <div class="portfolio-info">
-                <div class="portfolio-links">
-                  <a href="assets/img/projects/airnes2.png" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Aperçu - Airnes admin"><i class="bx bx-search-alt"></i></a>
-                  <span class="portfolio-link-placeholder" title="Pas de démo en ligne"><i class="bx bx-link-external"></i></span>
-                </div>
-              </div>
-            </div>
-            <div class="portfolio-content">
-              <h4>Airnes - Interface admin</h4>
-              <p class="portfolio-desc">Back-office de gestion des commandes, stocks, catalogue et suivi des ventes.</p>
-              <ul class="portfolio-stack">
-                <li>React</li>
-                <li>Tailwind</li>
-                <li>Node.js</li>
-                <li>MongoDB/Mongoose</li>
-                <li>Stripe</li>
-              </ul>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-4 col-md-6 portfolio-item filter-web">
-          <div class="portfolio-card">
-            <div class="portfolio-wrap">
-              <img src="assets/img/projects/orientex1.png" class="img-fluid" alt="Orient-Ex - Plateforme mentorat">
-              <div class="portfolio-info">
-                <div class="portfolio-links">
-                  <a href="assets/img/projects/orientex1.png" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Aperçu - Orient-Ex"><i class="bx bx-search-alt"></i></a>
-                  <a href="https://orient-ex.org" target="_blank" rel="noopener noreferrer" title="Ouvrir le site"><i class="bx bx-link-external"></i></a>
-                </div>
-              </div>
-            </div>
-            <div class="portfolio-content">
-              <h4>Orient-Ex - Plateforme mentorat</h4>
-              <p class="portfolio-desc">Mise en relation mentors et mentorés avec messagerie et suivi des parcours d'accompagnement.</p>
-              <ul class="portfolio-stack">
-                <li>Vue.js</li>
-                <li>Nuxt</li>
-                <li>Node.js</li>
-                <li>Sequelize</li>
-                <li>MySQL</li>
-              </ul>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-4 col-md-6 portfolio-item filter-web">
-          <div class="portfolio-card">
-            <div class="portfolio-wrap">
-              <img src="assets/img/projects/orientex2.png" class="img-fluid" alt="Orient-Ex - Interface admin">
-              <div class="portfolio-info">
-                <div class="portfolio-links">
-                  <a href="assets/img/projects/orientex2.png" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Aperçu - Orient-Ex admin"><i class="bx bx-search-alt"></i></a>
-                  <a href="https://orient-ex.org" target="_blank" rel="noopener noreferrer" title="Ouvrir le site"><i class="bx bx-link-external"></i></a>
-                </div>
-              </div>
-            </div>
-            <div class="portfolio-content">
-              <h4>Orient-Ex - Interface admin</h4>
-              <p class="portfolio-desc">Administration des utilisateurs, contenus et parcours de la plateforme de mentorat.</p>
-              <ul class="portfolio-stack">
-                <li>Vue.js</li>
-                <li>Nuxt</li>
-                <li>Node.js</li>
-                <li>Sequelize</li>
-                <li>MySQL</li>
-                <li>Docker</li>
-                <li>Nginx</li>
-                <li>Gitlab CI/CD</li>
-              </ul>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-4 col-md-6 portfolio-item filter-web">
-          <div class="portfolio-card">
-            <div class="portfolio-wrap">
-              <img src="assets/img/projects/openpay1.png" class="img-fluid" alt="OpenPay - Plateforme de paiement">
-              <div class="portfolio-info">
-                <div class="portfolio-links">
-                  <a href="assets/img/projects/openpay1.png" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Aperçu - OpenPay"><i class="bx bx-search-alt"></i></a>
-                  <a href="https://openpay.cg" target="_blank" rel="noopener noreferrer" title="Ouvrir le site"><i class="bx bx-link-external"></i></a>
-                </div>
-              </div>
-            </div>
-            <div class="portfolio-content">
-              <h4>OpenPay - Plateforme de paiement</h4>
-              <p class="portfolio-desc">Solution FinTech de paiement mobile via opérateurs téléphoniques pour particuliers et professionnels.</p>
-              <ul class="portfolio-stack">
-                <li>Vue.js</li>
-                <li>Nuxt</li>
-                <li>PrimeVue</li>
-                <li>Node.js</li>
-                <li>Sequelize</li>
-                <li>MySQL</li>
-                <li>Docker</li>
-                <li>Nginx</li>
-                <li>Gitlab CI/CD</li>
-              </ul>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-4 col-md-6 portfolio-item filter-web">
-          <div class="portfolio-card">
-            <div class="portfolio-wrap">
-              <img src="assets/img/projects/openpay2.png" class="img-fluid" alt="OpenPay - Interface partenaire">
-              <div class="portfolio-info">
-                <div class="portfolio-links">
-                  <a href="assets/img/projects/openpay2.png" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Aperçu - OpenPay partenaire"><i class="bx bx-search-alt"></i></a>
-                  <a href="https://openpay.cg" target="_blank" rel="noopener noreferrer" title="Ouvrir le site"><i class="bx bx-link-external"></i></a>
-                </div>
-              </div>
-            </div>
-            <div class="portfolio-content">
-              <h4>OpenPay - Interface partenaire</h4>
-              <p class="portfolio-desc">Espace partenaires pour le suivi des transactions, rapports et intégrations API.</p>
-              <ul class="portfolio-stack">
-                <li>Vue.js</li>
-                <li>Nuxt</li>
-                <li>PrimeVue</li>
-                <li>Node.js</li>
-                <li>Sequelize</li>
-                <li>MySQL</li>
-                <li>Docker</li>
-                <li>WebSocket</li>
-                <li>Nginx</li>
-                <li>Gitlab CI/CD</li>
-              </ul>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-4 col-md-6 portfolio-item filter-web">
-          <div class="portfolio-card">
-            <div class="portfolio-wrap">
-              <img src="assets/img/projects/openpay3.png" class="img-fluid" alt="OpenPay - Interface admin">
-              <div class="portfolio-info">
-                <div class="portfolio-links">
-                  <a href="assets/img/projects/openpay3.png" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Aperçu - OpenPay admin"><i class="bx bx-search-alt"></i></a>
-                  <a href="https://openpay.cg" target="_blank" rel="noopener noreferrer" title="Ouvrir le site"><i class="bx bx-link-external"></i></a>
-                </div>
-              </div>
-            </div>
-            <div class="portfolio-content">
-              <h4>OpenPay - Interface admin</h4>
-              <p class="portfolio-desc">Console d'administration des utilisateurs, transactions et paramètres système.</p>
-              <ul class="portfolio-stack">
-                <li>Tailwind</li>
-                <li>Vue.js</li>
-                <li>Nuxt</li>
-                <li>PrimeVue</li>
-                <li>Node.js</li>
-                <li>Sequelize</li>
-                <li>MySQL</li>
-                <li>Docker</li>
-                <li>Nginx</li>
-                <li>Gitlab CI/CD</li>
-                <li>WebSocket</li>
-              </ul>
-            </div>
-          </div>
-        </div>
-
-        <!-- MOBILE -->
-
-        <div class="col-lg-4 col-md-6 portfolio-item filter-mobile">
-          <div class="portfolio-card">
-            <div class="portfolio-wrap">
-              <img src="assets/img/projects/hb1.png" class="img-fluid" alt="Application mobile bancaire agrégatrice">
-              <div class="portfolio-info">
-                <div class="portfolio-links">
-                  <a href="assets/img/projects/hb1.png" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Application mobile bancaire agrégatrice"><i class="bx bx-search-alt"></i></a>
-                  <span class="portfolio-link-placeholder" title="Pas de démo en ligne"><i class="bx bx-link-external"></i></span>
-                </div>
-              </div>
-            </div>
-            <div class="portfolio-content">
-              <h4>Application mobile bancaire agrégatrice (Open Banking)</h4>
-              <p class="portfolio-desc">permettant de centraliser plusieurs comptes bancaires via Open Banking. Implémentation de fonctionnalités de gestion financière (consultation de comptes, virements, création de cartes virtuelles) avec authentification sécurisée.</p>
-              <ul class="portfolio-stack">
-                <li>React Native</li>
-                <li>Expo</li>
-                <li>Java</li>
-                <li>Spring Boot</li>
-                <li>PostgreSQL</li>
-                <li>Docker</li>
-                <li>keycloak</li>
-                <li>Truelayer</li>
-                <li>GitLab</li>
-                <li>Stripe</li>
-              </ul>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-4 col-md-6 portfolio-item filter-mobile">
-          <div class="portfolio-card">
-            <div class="portfolio-wrap">
-              <img src="assets/img/projects/hb2.png" class="img-fluid" alt="Application mobile bancaire agrégatrice">
-              <div class="portfolio-info">
-                <div class="portfolio-links">
-                  <a href="assets/img/projects/hb2.png" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Application mobile bancaire agrégatrice"><i class="bx bx-search-alt"></i></a>
-                  <span class="portfolio-link-placeholder" title="Pas de démo en ligne"><i class="bx bx-link-external"></i></span>
-                </div>
-              </div>
-            </div>
-            <div class="portfolio-content">
-              <h4>Application mobile bancaire agrégatrice (Open Banking)</h4>
-              <p class="portfolio-desc">permettant de centraliser plusieurs comptes bancaires via Open Banking. Implémentation de fonctionnalités de gestion financière (consultation de comptes, virements, création de cartes virtuelles) avec authentification sécurisée.</p>
-              <ul class="portfolio-stack">
-                <li>React Native</li>
-                <li>Expo</li>
-                <li>Java</li>
-                <li>Spring Boot</li>
-                <li>PostgreSQL</li>
-                <li>Docker</li>
-                <li>keycloak</li>
-                <li>Truelayer</li>
-                <li>GitLab</li>
-                <li>Stripe</li>
-              </ul>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-4 col-md-6 portfolio-item filter-mobile">
-          <div class="portfolio-card">
-            <div class="portfolio-wrap">
-              <img src="assets/img/projects/hb3.png" class="img-fluid" alt="Application mobile bancaire agrégatrice">
-              <div class="portfolio-info">
-                <div class="portfolio-links">
-                  <a href="assets/img/projects/hb3.png" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Application mobile bancaire agrégatrice"><i class="bx bx-search-alt"></i></a>
-                  <span class="portfolio-link-placeholder" title="Pas de démo en ligne"><i class="bx bx-link-external"></i></span>
-                </div>
-              </div>
-            </div>
-            <div class="portfolio-content">
-              <h4>Application mobile bancaire agrégatrice (Open Banking)</h4>
-              <p class="portfolio-desc">permettant de centraliser plusieurs comptes bancaires via Open Banking. Implémentation de fonctionnalités de gestion financière (consultation de comptes, virements, création de cartes virtuelles) avec authentification sécurisée.</p>
-              <ul class="portfolio-stack">
-                <li>React Native</li>
-                <li>Expo</li>
-                <li>Java</li>
-                <li>Spring Boot</li>
-                <li>PostgreSQL</li>
-                <li>Docker</li>
-                <li>keycloak</li>
-                <li>Truelayer</li>
-                <li>GitLab</li>
-                <li>Stripe</li>
-              </ul>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-4 col-md-6 portfolio-item filter-mobile">
-          <div class="portfolio-card">
-            <div class="portfolio-wrap">
-              <img src="assets/img/projects/loukka1.jpeg" class="img-fluid" alt="Loukka - Découverte">
-              <div class="portfolio-info">
-                <div class="portfolio-links">
-                  <a href="assets/img/projects/loukka1.jpeg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Aperçu - Loukka"><i class="bx bx-search-alt"></i></a>
-                  <span class="portfolio-link-placeholder" title="Pas de démo en ligne"><i class="bx bx-link-external"></i></span>
-                </div>
-              </div>
-            </div>
-            <div class="portfolio-content">
-              <h4>Loukka</h4>
-              <p class="portfolio-desc">Application de géolocalisation pour découvrir des établissements difficilement repérables.</p>
-              <ul class="portfolio-stack">
-                <li>React Native</li>
-                <li>Expo</li>
-                <li>Maps API</li>
-                <li>Docker</li>
-                <li>Node.js</li>
-                <li>Sequelize</li>
-                <li>PostgreSQL</li>
-              </ul>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-4 col-md-6 portfolio-item filter-mobile">
-          <div class="portfolio-card">
-            <div class="portfolio-wrap">
-              <img src="assets/img/projects/loukka2.jpeg" class="img-fluid" alt="Loukka - Carte">
-              <div class="portfolio-info">
-                <div class="portfolio-links">
-                  <a href="assets/img/projects/loukka2.jpeg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Aperçu - Loukka"><i class="bx bx-search-alt"></i></a>
-                  <span class="portfolio-link-placeholder" title="Pas de démo en ligne"><i class="bx bx-link-external"></i></span>
-                </div>
-              </div>
-            </div>
-            <div class="portfolio-content">
-              <h4>Loukka</h4>
-              <p class="portfolio-desc">Application de géolocalisation pour découvrir des établissements difficilement repérables.</p>
-              <ul class="portfolio-stack">
-                <li>React Native</li>
-                <li>Expo</li>
-                <li>Maps API</li>
-                <li>Docker</li>
-                <li>Node.js</li>
-                <li>Sequelize</li>
-                <li>PostgreSQL</li>
-              </ul>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-4 col-md-6 portfolio-item filter-mobile">
-          <div class="portfolio-card">
-            <div class="portfolio-wrap">
-              <img src="assets/img/projects/loukka4.jpeg" class="img-fluid" alt="Loukka - Fiche établissement">
-              <div class="portfolio-info">
-                <div class="portfolio-links">
-                  <a href="assets/img/projects/loukka4.jpeg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Aperçu - Loukka"><i class="bx bx-search-alt"></i></a>
-                  <span class="portfolio-link-placeholder" title="Pas de démo en ligne"><i class="bx bx-link-external"></i></span>
-                </div>
-              </div>
-            </div>
-            <div class="portfolio-content">
-              <h4>Loukka</h4>
-              <p class="portfolio-desc">Application de géolocalisation pour découvrir des établissements difficilement repérables.</p>
-              <ul class="portfolio-stack">
-                <li>React Native</li>
-                <li>Expo</li>
-                <li>Maps API</li>
-                <li>Docker</li>
-                <li>Node.js</li>
-                <li>Sequelize</li>
-                <li>PostgreSQL</li>
-              </ul>
-            </div>
-          </div>
-        </div>
-
-        <!-- <div class="col-lg-4 col-md-6 portfolio-item filter-web">
-          <div class="portfolio-wrap">
-            <img src="assets/img/portfolio/portfolio-5.jpg" class="img-fluid" alt="">
-            <div class="portfolio-info">
-              <h4>Web 2</h4>
-              <p>Web</p>
-              <div class="portfolio-links">
-                <a href="assets/img/portfolio/portfolio-5.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Web 2"><i class="bx bx-plus"></i></a>
-                <a href="portfolio-details.html" target="_blank" rel="noopener noreferrer" title="Ouvrir dans un nouvel onglet"><i class="bx bx-link"></i></a>
-              </div>
-            </div>
-          </div>
-        </div> -->
-
-        <!-- <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-          <div class="portfolio-wrap">
-            <img src="assets/img/portfolio/portfolio-6.jpg" class="img-fluid" alt="">
-            <div class="portfolio-info">
-              <h4>App 3</h4>
-              <p>App</p>
-              <div class="portfolio-links">
-                <a href="assets/img/portfolio/portfolio-6.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="App 3"><i class="bx bx-plus"></i></a>
-                <a href="portfolio-details.html" target="_blank" rel="noopener noreferrer" title="Ouvrir dans un nouvel onglet"><i class="bx bx-link"></i></a>
-              </div>
-            </div>
-          </div>
-        </div> -->
-
-        
-
-        <!-- <div class="col-lg-4 col-md-6 portfolio-item filter-web">
-          <div class="portfolio-wrap">
-            <img src="assets/img/portfolio/portfolio-9.jpg" class="img-fluid" alt="">
-            <div class="portfolio-info">
-              <h4>Web 3</h4>
-              <p>Web</p>
-              <div class="portfolio-links">
-                <a href="assets/img/portfolio/portfolio-9.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Web 3"><i class="bx bx-plus"></i></a>
-                <a href="portfolio-details.html" target="_blank" rel="noopener noreferrer" title="Ouvrir dans un nouvel onglet"><i class="bx bx-link"></i></a>
-              </div>
-            </div>
-          </div>
-        </div> -->
-
-      </div>
-
-    </div>
-  </section><!-- End Portfolio Section -->
-
   <!-- Vendor JS Files -->
-  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
-  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
-  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
-  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
-  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
-
-  <!-- Template Main JS File -->
-  <script src="assets/js/main.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js" defer></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js" defer></script>
+  <script src="assets/js/main.js" defer></script>
 
 </body>
 
